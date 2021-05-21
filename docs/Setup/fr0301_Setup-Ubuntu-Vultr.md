@@ -5,7 +5,7 @@
 
 ### 2. Deploy new Server (Create Instance)
 
-[![Vultr Create Instance](../images/et0202-01_Vultr-Create-Instance.png#img2)](../images/et0202-01_Vultr-Create-Instance.mp4 "Setup Vultr")
+[![Vultr Create Instance](../images/fr0202-01_Vultr-Create-Instance.png#img2)](../images/fr0202-01_Vultr-Create-Instance.mp4 "Setup Vultr")
 
 1. Choose Server: Cloud Compute
 2. Server Location: ??????
@@ -15,9 +15,9 @@
     + Select an existing key, or
     + Use ssh-keygen to create your public key and paste it into the vultr form.
 
-![Vultr-Add SSH key, Blank](../images/et0202-04_Vultr-add-SSH-key-blank.png#img3 "Blank Key")
+![Vultr-Add SSH key, Blank](../images/fr0202-04_Vultr-add-SSH-key-blank.png#img3 "Blank Key")
 
-![Vultr-Add SSH keyTest](../images/et0202-05_Vultr-add-SSH-key-pasted.png#img3 "Pasted Key")
+![Vultr-Add SSH keyTest](../images/fr0202-05_Vultr-add-SSH-key-pasted.png#img3 "Pasted Key")
 
 
 6. Server Host Name and Label: FormRx-Vultr for both
@@ -27,7 +27,7 @@
 
 ### 3. Open Vultr VM Console
 
-[![Vultr Open Console](../images/et0202-06_Vultr-console.png#img1)](../images/et0202-06_Vultr-console.mp4 "Vultr Open Console")
+[![Vultr Open Console](../images/fr0202-06_Vultr-console.png#img1)](../images/fr0202-06_Vultr-console.mp4 "Vultr Open Console")
 
 
 + Click on Products
