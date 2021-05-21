@@ -1,9 +1,6 @@
 # Setup Instructions for creating a simple website with SSL
 
-## Open Bitvise on your local workstation and login as nimda to the Ubuntu server
-
-
-1. Bitvise Setup
+1. Open Bitvise on your local workstation and login as nimda to the Ubuntu server
 
  - Open
 ```
