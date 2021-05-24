@@ -3,23 +3,26 @@
 
 ### 1. Login as root to the Ubuntu server on your Vultr console
 
+![Server Login](../images/fr0302-01_Ubuntu-Server-Login.png#img2 "Server Login")
+
 ### 2. Create a new sudo user
 - Create a new user alias with root privileges
 ```
 useradd -ou 0 -g 0 -d /root -s /bin/bash -G sudo nimda
 passwd nimda
 ```
-
 - Check to see if nimda is in sudo group
 ```
 grep '^sudo' /etc/group
 ```
+
+![New User](../images/fr0302-02_Ubuntu-New-User.png#img2 "New User")
+
 - Check user info
 ```
 cat /etc/passwd
 ```
-
-![SSH-Admin Group](../images/et0302-06_ssh-admin-group.png#img2 "SSH-Admin Group")
+![Check User Info](../images/fr0302-03_Ubuntu-Check-User-Info.png#img2 "Check User Info")
 
 
 ### 3. Update and upgrade server
@@ -27,6 +30,7 @@ cat /etc/passwd
 ```
 apt-get update && apt-get upgrade
 ```
+![Update and Upgrade](../images/fr0302-04_Ubuntu-Update-Upgrade.png#img2 "Update and Upgrade")
 
 ### 4. Install and Configure unattended-updates
 
@@ -217,5 +221,5 @@ timedatectl set-timezone America/New_York
 
 ### Next Step - Install NodeJs: 
 
-[Install NodeJs](../setup/et0303_Setup-NodeJS-Ubuntu.md)
+## [Install NodeJs](../setup/et0303_Setup-NodeJS-Ubuntu.md)
 
