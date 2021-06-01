@@ -202,7 +202,7 @@ filter = sshd
 logpath = /var/log/auth.log
 maxretry = 3
 ```
-![SSH-jail-local](../images/fr0302-17_ssh-jail-local.png#img2 "SSH-jail-local")
+![SSH-jail-local](../images/fr0302-17_Ubuntu-ssh-jail-local.png#img2 "SSH-jail-local")
 
 - This configuration enables the jail, sets the SSH port to be monitored to 22, uses the sshd filter, sets the max login tries, and sets the log file to be monitored.
 
@@ -211,7 +211,6 @@ maxretry = 3
 systemctl restart fail2ban
 ```
 - Attempts to login to the server and fail the three times, access is blocked from the IP address. 
-
 
 ### 9. Enable firewall
 
@@ -229,13 +228,33 @@ ufw --force enable
 ```
 ufw status
 ```
-
+![Enable Firewall](../images/fr0302-18_Ubuntu-enable-firewall.png#img2 "Enable Firewall")
 ### 10. Set the server time zone
 ```
 timedatectl set-timezone America/New_York 
 ```
+- Check TimeZone
+```
+timedatectl | grep “Time zone”
+```
+![Set Time Zone](../images/fr0302-19_Ubuntu-set-timezone.png#img2 "Set Time Zone")
 
-### Next Step - Install NodeJs: 
+### 11. Create Snapshot of server in Vultr
 
-## [Install NodeJs](../setup/et0303_Setup-NodeJS-Ubuntu.md)
+- From Vultr console select snapshots
+
+![Select Snapshots](../images/fr0302-20_Ubuntu-select-snapshots.png#img2 "Select Snapshots")
+
+- Add a label, take snapshot
+
+![Take Snapshot](../images/fr0302-21_Ubuntu-take-snapshot.png#img2 "Take Snapshot")
+
+- List Snapshots
+
+![List Snapshots](../images/fr0302-22_Ubuntu-list-snapshots.png#img2 "List Snapshots")
+
+
+### Next Step - Install Web Server: 
+
+## [Install Web Server](../setup/et0303_Setup-Web-Server.md)
 
