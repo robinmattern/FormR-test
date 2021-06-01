@@ -6,7 +6,7 @@
 ![Server Login](../images/fr0302-01_Ubuntu-Server-Login.png#img2 "Server Login")
 
 ### 2. Create a new sudo user
-- Create a new user alias with root privileges
+- Create a new user alias with root privileges. This user will login remotely.
 ```
 useradd -ou 0 -g 0 -d /root -s /bin/bash -G sudo nimda
 passwd nimda
@@ -15,7 +15,6 @@ passwd nimda
 ```
 grep '^sudo' /etc/group
 ```
-
 ![New User](../images/fr0302-02_Ubuntu-New-User.png#img2 "New User")
 
 - Check user info
@@ -23,7 +22,6 @@ grep '^sudo' /etc/group
 cat /etc/passwd
 ```
 ![Check User Info](../images/fr0302-03_Ubuntu-Check-User-Info.png#img2 "Check User Info")
-
 
 ### 3. Update and upgrade server
 
@@ -38,10 +36,15 @@ apt-get update && apt-get upgrade
 ```
 apt-get install unattended-upgrades
 ```
+
+![Install Unattended Upgrades](../images/fr0302-05_Ubuntu-Install-Unattended-Upgrades.png#img2 "Install Unattended Upgrades")
+
 - Check installation
 ```
 systemctl status unattended-upgrades
 ```
+![Check Unattended Upgrades](../images/fr0302-06_Ubuntu-Check-Unattended-Upgrades.png#img2 "Check Unattended Upgrades")
+
 - Modify apt.conf.d/50unattended-upgrades
 ```
 nano /etc/apt/apt.conf.d/50unattended-upgrades
@@ -50,6 +53,8 @@ nano /etc/apt/apt.conf.d/50unattended-upgrades
 ```
 "${distro_id}:${distro_codename}-updates";
 ```
+![Modify apt.conf.d](../images/fr0302-07_Ubuntu-Modify-apt-conf-d.png#img2 "Modify apt.conf.d")
+
 - Uncomment and modify:
 ```
 Unattended-Upgrade::Remove-Unused-Kernel-Packages "true";
@@ -57,6 +62,8 @@ Unattended-Upgrade::Remove-Unused-Dependencies "true";
 Unattended-Upgrade::Automatic-Reboot "true";
 Unattended-Upgrade::Automatic-Reboot-Time "02:38";
 ```
+![Modify apt.conf.d-2](../images/fr0302-08_Ubuntu-Modify-apt-conf-d-2.png#img2 "Modify apt.conf.d-2")
+
 - Save the file
 
 - Enable Automatic Updates
@@ -70,14 +77,16 @@ APT::Periodic::Download-Upgradeable-Packages "1";
 APT::Periodic::AutocleanInterval "7";
 APT::Periodic::Unattended-Upgrade "1";
 ```
+![Modify apt.conf.d-3](../images/fr0302-09_Ubuntu-Modify-apt-conf-d-3.png#img2 "Modify apt.conf.d-3")
 
 - Save the file
 
-- Check if it works
+- Check if Unattended Upgrades works
 
 ```
 unattended-upgrades --dry-run --debug
 ```
+![Check Unattended Upgrades](../images/fr0302-10_Ubuntu-Check-Unattended-Upgrades.png#img2 "Check Unattended Upgrades")
 
 - Reboot the server
 ```
@@ -85,117 +94,124 @@ reboot
 ```
 
 ### 5. Secure Shared Memory
-     ```
-     nano /etc/fstab
-     ```
+- Edit  fstab
+```
+nano /etc/fstab
+```
 - Add the following line to the bottom of that file:
-     ```
-     tmpfs /run/shm tmpfs defaults,noexec,nosuid 0 0  
-     ``` 
+```
+tmpfs /run/shm tmpfs defaults,noexec,nosuid 0 0  
+``` 
 - Save and close the file and reboot the server.
-     ```
-     reboot
-     ```
-![Secure Shared Memory](../images/et0302-01_Hardening-secure-shared-memory.png#img2 "Secure Shared Memory")
+```
+reboot
+```
+![Secure Shared Memory](../images/fr0302-11_Ubuntu-secure-shared-memory.png#img2 "Secure Shared Memory")
 
 ### 6. Enable SSH Login for Specific Users Only
 
-     ```
-     nano /etc/ssh/sshd_config
-     ```
+- Edit sshd_config
+```
+nano /etc/ssh/sshd_config
+```
 
-    At the bottom of the file, add the line:
+- At the bottom of the file, add the line: (Use your own username and your workstation's IP address)
 
-     ```
-     AllowUsers nimda@10.1.*.*
-     ```
+```
+AllowUsers nimda@xxx.xxx.xxx.xxx
+```
 
-    Save and close the file and restart sshd with this command:
+![SSH AllowUsers](../images/fr0302-12_Ubuntu-ssh-allowusers.png#img2 "SSH AllowUsers")
 
-     ```
-     systemctl restart sshd
-     ```
+- Save and close the file and restart sshd with this command:
 
-![SSH AllowUsers](../images/et0302-02_ssh-allowusers.png#img2 "SSH AllowUsers")
-
+```
+systemctl restart sshd
+```
 ### 7. Include a Security Login Banner
-     ```
-     sudo nano /etc/issue.net
-     ```
+- Edit issue.net
+```
+nano /etc/issue.net
+```
+- Add a warning
+```
+************************************************************************
 
-- Edit the file to add a suitable warning. Save and close the file.
+     Warning!!! This server is dedicated for FormR purposes.
+     
+ Malicious users will be subject to civil and/or criminal prosecution.
+     
+************************************************************************
 
-![SSH-Banner Issue.net](../images/et0302-03_ssh-banner-issue-net.png#img2 "SSH-SSH-Banner Issue.net")
+```
+-  Save and close the file.
+
+![SSH-Banner Issue.net](../images/fr0302-13_Ubuntu-ssh-banner-issue-net.png#img2 "SSH-Banner Issue.net")
 
 - Disable the banner message from Message Of The Day (motd).
-     ```
-     sudo nano /etc/pam.d/sshd
-     ```
+```
+nano /etc/pam.d/sshd
+```
 
-- With this file open for editing, comment out the following two lines (adding a # to the beginning of each line):
-     ```
-     #session optional pam_motd.so motd=run/motd.dynamic
-     #session optional pam_motd.so noupdate
-     ```
+- Comment out the following two lines (adding a # to the beginning of each line):
+```
+#session optional pam_motd.so motd=run/motd.dynamic
+#session optional pam_motd.so noupdate
+```
 
-![SSH-Uncomment](../images/et0302-04_ssh-uncomment-pam-d.png#img2 "SSH-Uncomment")
+![SSH-Comment Out](../images/fr0302-14_Ubuntu-ssh-comment-out-pam-d.png#img2 "SSH-Comment Out")
      
-- Next, open /etc/ssh/sshd_config with the command:
+- Edit sshd_config
 
-     ```
-     sudo nano /etc/ssh/sshd_config
-     ```
-- Uncomment the line (remove the # symbol):
+```
+nano /etc/ssh/sshd_config
+```
+- Replace
 
-     ```
-     #Banner none
+```
+#Banner none   with    Banner  /etc/issue.net
+```
+![SSH-Banner Config](../images/fr0302-15_Ubuntu-ssh-banner-config.png#img2 "SSH-Banner Config")
 
-     replace none  with  /etc/issue.net
-     ```
-- Save and close that file and restart the SSH server with the command:
+- Save and close the file and restart the SSH server
      
-     ```
-     sudo systemctl restart sshd
-     ```
-
-![SSH-Banner Config](../images/et0302-05_ssh-banner-config.png#img2 "SSH-Banner Config")
-
+```
+systemctl restart sshd
+```
 - When someone logs into your server using SSH, they see your newly added banner warning them of any consequences of further action. 
 
-
-
 ### 8. Fail2ban
-- Install
-     ```
-     apt-get install fail2ban
-     ```
-- Configure
-     ```     
-     nano /etc/fail2ban/jail.local
-     ```
 
-![SSH-jail-local](../images/et0302-065_ssh-jail-local.png#img2 "SSH-jail-local")
+- Install
+```
+apt-get install fail2ban
+```
+![Install Fail2Ban](../images/fr0302-16_Ubuntu-install-fail2ban.png#img2 "Install Fail2Ban")
+
+- Configure Fail2Ban
+```     
+nano /etc/fail2ban/jail.local
+```
 
 - In this new file, add the following contents:
-     ```
-     [sshd]
-     enabled = true
-     port = 22
-     filter = sshd
-     logpath = /var/log/auth.log
-     maxretry = 3
-     ```
+```
+[sshd]
+enabled = true
+port = 22
+filter = sshd
+logpath = /var/log/auth.log
+maxretry = 3
+```
+![SSH-jail-local](../images/fr0302-17_ssh-jail-local.png#img2 "SSH-jail-local")
 
-- This configuration enables the jail, sets the SSH port to be monitored to 22, uses the sshd filter, and sets the log file to be monitored.
+- This configuration enables the jail, sets the SSH port to be monitored to 22, uses the sshd filter, sets the max login tries, and sets the log file to be monitored.
 
 - Save and close that file and restart fail2ban with the command:
-     ```
-     sudo systemctl restart fail2ban
-     ```
+```
+systemctl restart fail2ban
+```
+- Attempts to login to the server and fail the three times, access is blocked from the IP address. 
 
-- If you attempt to Secure Shell into that server and fail the login three times (set as the default by fail2ban), access is blocked from the IP address you are working from. 
-
-![SSH-fail2ban](../images/et0302-07_ssh-fail2ban.png#img2 "SSH-fail2ban")
 
 ### 9. Enable firewall
 
