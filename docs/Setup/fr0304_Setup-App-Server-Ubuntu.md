@@ -50,7 +50,7 @@ pm2 startup systemd
 Use label: FormR-Installed-Web-Server
 ```
 
-![Take Snapshot](../images/fr0303-08_Ubuntu-take-snapshot.png#img2 "Take Snapshot")
+![Take Snapshot](./images/fr0303-08_Ubuntu-take-snapshot.png#img2 "Take Snapshot")
 
 
 ### Next Step - Install Database Server: 

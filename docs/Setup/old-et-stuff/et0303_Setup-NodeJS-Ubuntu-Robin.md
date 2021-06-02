@@ -30,7 +30,7 @@
  3. Save the profile.
  4. Click on the `Log in` button. This will open a remote SSH windows and a SFTP window.
  
-    [![Login with Bitvise](../images/et0302-01_SSH-into-FormR-Server.png#img2)](../images/et0302-01_SSH-into-FormR-Server.mp4 "Setup Bitvise")
+    [![Login with Bitvise](./images/et0302-01_SSH-into-FormR-Server.png#img2)](./images/et0302-01_SSH-into-FormR-Server.mp4 "Setup Bitvise")
 
     Ctreate a local folder for the VM e.g. FormR0-Vultr and set it as the local initial directory under the SFTP tab. This folder should contain the top level folders on the remote server that you will be working with.
 
@@ -46,7 +46,7 @@
     ```
     $ hello.sh
     ```
-    ![Run First Setup Script](../images/et0302-03_Run-first-setup-script.png#img1 "Run First Setup Script")
+    ![Run First Setup Script](./images/et0302-03_Run-first-setup-script.png#img1 "Run First Setup Script")
 
 ### 4. Run the script to install NodeJS, NGinx and PM2
 
@@ -54,7 +54,7 @@
     ```
     $ setup-nodejs-server-on-linux.sh
     ```
-<!-- [![Install NodeJS](../images/et0302-04_Install-NodeJS.png#img1)](../images/et0302-04_Install-NodeJS.mp4 "Install NodeJS") -->
+<!-- [![Install NodeJS](./images/et0302-04_Install-NodeJS.png#img1)](./images/et0302-04_Install-NodeJS.mp4 "Install NodeJS") -->
 <!-- <iframe width="auto" height="200" src="https://www.youtube-nocookie.com/embed/rY0WxgSXdEE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
      <video loop muted autoplay playsinline controls class="vid1" >
        <source src="images/et0302-04_Install-NodeJS.mp4" />

@@ -8,7 +8,7 @@
 
 ### 2. Create a new VM in VMFusion
 
-[![VMFusion Create VM](../images/et0203-01_VMFusion-Create-VM.png#img2)](../images/et0202-01_VMFusion-Create-VM.mp4 "VMFusion Create VM")
+[![VMFusion Create VM](./images/et0203-01_VMFusion-Create-VM.png#img2)](./images/et0202-01_VMFusion-Create-VM.mp4 "VMFusion Create VM")
 
 1. Open VMFusion Virtual Machine Library
 2. Click the + icon on the top left, then click New
@@ -44,11 +44,11 @@
 
 
 
-![PuttyGen-Public key](../images/et0202-03_PuttyGen-highlight-for-paste.png#img2 "PuttyGen-Public key")
+![PuttyGen-Public key](./images/et0202-03_PuttyGen-highlight-for-paste.png#img2 "PuttyGen-Public key")
 
-![Vultr-Add SSH key, Blank](../images/et0202-04_Vultr-add-SSH-key-blank.png#img3 "Blank Key")
+![Vultr-Add SSH key, Blank](./images/et0202-04_Vultr-add-SSH-key-blank.png#img3 "Blank Key")
 
-![Vultr-Add SSH keyTest](../images/et0202-05_Vultr-add-SSH-key-pasted.png#img3 "Pasted Key")
+![Vultr-Add SSH keyTest](./images/et0202-05_Vultr-add-SSH-key-pasted.png#img3 "Pasted Key")
 
 
 6. Server Host Name and Label: FormRx-Vultr for both
@@ -58,7 +58,7 @@
 
 ### 3. Open Vultr VM Console
 
-[![Vultr Open Console](../images/et0202-06_Vultr-console.png#img1)](../images/et0202-06_Vultr-console.mp4 "Vultr Open Console")
+[![Vultr Open Console](./images/et0202-06_Vultr-console.png#img1)](./images/et0202-06_Vultr-console.mp4 "Vultr Open Console")
 
 
 + Click on Products
@@ -78,7 +78,7 @@ You will see the Welcome screen for Ubuntu and the command prompt:
 ### 4. Download and/or open Bitvise SSH / SFTP browser.
 
 
-[![Setup Bitvise](../images/et0202-02_Bitvise_Setup.png#img1_Bitvise_Setup.png)](../images/et0202-02_Bitvise_Setup.mp4 "Setup Bitvise")
+[![Setup Bitvise](./images/et0202-02_Bitvise_Setup.png#img1_Bitvise_Setup.png)](./images/et0202-02_Bitvise_Setup.mp4 "Setup Bitvise")
 
 
  1. Save file immediately as FormRx-Vultr

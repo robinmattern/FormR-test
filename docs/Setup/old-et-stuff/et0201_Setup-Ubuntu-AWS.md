@@ -51,7 +51,7 @@
         See "man sudo_root" for details.
      ```
   3. Download and configure Bitvise SSH / SFTP browser    
-     [![Setup Bitvise](../images/et10112-08_Bitvise_Setup.png)](../images/et10112-08_Bitvise_Setup.mp4 "Setup Bitvise")
+     [![Setup Bitvise](./images/et10112-08_Bitvise_Setup.png)](./images/et10112-08_Bitvise_Setup.mp4 "Setup Bitvise")
 
 
   4. Create bin folder for bash scripts
