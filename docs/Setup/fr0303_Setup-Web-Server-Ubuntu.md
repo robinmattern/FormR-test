@@ -1,5 +1,3 @@
-sudo
-
 # Setup Instructions for the web server, NGINX, on Ubuntu
 
 ## Login as root to the Ubuntu server on your Vultr console
