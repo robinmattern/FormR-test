@@ -129,21 +129,23 @@ AllowUsers nimda@xxx.xxx.xxx.xxx
 systemctl restart sshd
 ```
 ### 7. Include a Security Login Banner
-- Edit issue.net
+
+- Create a banner file
 ```
 nano /etc/issue.net
 ```
-- Add a warning
+- Add a warning message
+
 ```
 ************************************************************************
 
-     Warning!!! This server is dedicated for FormR purposes.
+ Warning!!! This server is dedicated for FormR purposes.
      
  Malicious users will be subject to civil and/or criminal prosecution.
      
 ************************************************************************
-
 ```
+
 -  Save and close the file.
 
 ![SSH-Banner Issue.net](../images/fr0302-13_Ubuntu-ssh-banner-issue-net.png#img2 "SSH-Banner Issue.net")
