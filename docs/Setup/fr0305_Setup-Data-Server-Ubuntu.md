@@ -148,5 +148,4 @@ ufw allow 3306/tcp
  
 ### Next Step - Create Website with SSL on your server: 
 
-[Create Website with SSL](../setup/et0305_Setup-Website-SSL.md)
-
+[Create Website with SSL](../setup/fr0306_Setup-Website-SSL-Ubuntu.md)

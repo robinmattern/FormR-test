@@ -45,3 +45,14 @@ pm2 startup systemd
  npm i docsify -g
  ```
 
+### 5. Create Snapshot of server in Vultr
+```
+Use label: FormR-Installed-Web-Server
+```
+
+![Take Snapshot](../images/fr0303-08_Ubuntu-take-snapshot.png#img2 "Take Snapshot")
+
+
+### Next Step - Install Database Server: 
+
+## [Install Database Server](../setup/fr0305_Setup-Data-Server-Ubuntu.md)

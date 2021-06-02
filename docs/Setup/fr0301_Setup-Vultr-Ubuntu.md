@@ -69,5 +69,5 @@
 
 ### Next Step - Harden your server: 
 
-## [Harden Ubuntu](../setup/et0302_Basic-Hardening-Ubuntu.md)
+## [Harden Ubuntu](../setup/fr0302_Setup-Hardening-Ubuntu.md)
 
