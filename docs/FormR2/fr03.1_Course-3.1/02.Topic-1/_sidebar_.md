@@ -3,4 +3,4 @@
    }
 
 <hb>02 - Topic 1                            </hb>
--  [02-01 - Guide 2.1                       ](fr02.1/02.Topic-1/02.01.Guide-2.1.md)
+-  [02-01 - Guide 2.1                       ](02.01.Guide-2.1.md)

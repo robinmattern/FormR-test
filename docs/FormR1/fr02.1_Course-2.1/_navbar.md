@@ -1,1 +1,1 @@
-- [![](../assets/home.svg)Home](/ "IMADE3D Awesome Plaintext Docs")
+- [![](assets/home.svg)Home](/ "IMADE3D Awesome Plaintext Docs")

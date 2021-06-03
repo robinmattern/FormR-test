@@ -30,7 +30,7 @@
  3. Save the profile.
  4. Click on the `Log in` button. This will open a remote SSH windows and a SFTP window.
  
-    [![Login with Bitvise](./images/et0302-01_SSH-into-FormR-Server.png#img2)](./images/et0302-01_SSH-into-FormR-Server.mp4 "Setup Bitvise")
+    [![Login with Bitvise](./images/et0302-01_SSH-into-FormR-Server.png)](./images/et0302-01_SSH-into-FormR-Server.mp4 "Setup Bitvise")
 
     Ctreate a local folder for the VM e.g. FormR0-Vultr and set it as the local initial directory under the SFTP tab. This folder should contain the top level folders on the remote server that you will be working with.
 

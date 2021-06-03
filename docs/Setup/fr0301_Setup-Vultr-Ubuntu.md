@@ -6,23 +6,23 @@
 
 - Deploy New Server 
 
-![Vultr Deploy New Server](./images/fr0301-01_Vultr-Deploy-New-Server.png#img2 "Deploy New Server")
+![Vultr Deploy New Server](./images/fr0301-01_Vultr-Deploy-New-Server.png "Deploy New Server")
 
 - Choose Server: Cloud Compute
 
-![Vultr Cloud Compute](./images/fr0301-02_Vultr-Cloud-Compute.png#img2 "Cloud Compute")
+![Vultr Cloud Compute](./images/fr0301-02_Vultr-Cloud-Compute.png "Cloud Compute")
 
 - Server Location
 
-![Vultr Server Location](./images/fr0301-03_Vultr-Server-Location.png#img2 "Server Location")
+![Vultr Server Location](./images/fr0301-03_Vultr-Server-Location.png "Server Location")
 
 - Server Type: Ubuntu 18.04 x64
 
-![Vultr Server Type](./images/fr0301-04_Vultr-Server-Type.png#img2 "Server Type")
+![Vultr Server Type](./images/fr0301-04_Vultr-Server-Type.png "Server Type")
 
 - Server Size: 25GB SSD
 
-![Vultr Server Size](./images/fr0301-05_Vultr-Server-Size.png#img2 "Server Size")
+![Vultr Server Size](./images/fr0301-05_Vultr-Server-Size.png "Server Size")
 
 - Add SSH Key
     + Select an existing key, or
@@ -34,38 +34,38 @@
 
 - Click Deploy Now
 
-![Vultr Deploy Now](./images/fr0301-07_Vultr-Deploy-Now.png#img2 "Deploy Now")
+![Vultr Deploy Now](./images/fr0301-07_Vultr-Deploy-Now.png "Deploy Now")
 
 - Installing
 
-![Vultr Installing](./images/fr0301-08_Vultr-Installing.png#img2 "Installing")
+![Vultr Installing](./images/fr0301-08_Vultr-Installing.png "Installing")
 
 2. Open Vultr VM Console to Log in
 
 - Click on Products, then the Server Name i.e. FormRx-Vultr
 
-![Vultr Open Console](./images/fr0301-09_Vultr-Open-Console.png#img2 "Open Console")
+![Vultr Open Console](./images/fr0301-09_Vultr-Open-Console.png "Open Console")
 
 - Click the copy password icon
 
-![Vultr Copy Password](./images/fr0301-10_Vultr-Copy-Password.png#img2 "Copy Password")
+![Vultr Copy Password](./images/fr0301-10_Vultr-Copy-Password.png "Copy Password")
 
 - Click the View Console icon
 
-![Vultr View Console](./images/fr0301-11_Vultr-View-Console.png#img2 "View Console")
+![Vultr View Console](./images/fr0301-11_Vultr-View-Console.png "View Console")
 
 - Click in the console window and then enter login: root and press enter
 
 - Click the Send clipboard button and press enter.
 
-![Vultr Login](./images/fr0301-12_Vultr-Login.png#img2 "Login")
+![Vultr Login](./images/fr0301-12_Vultr-Login.png "Login")
 
 
 - You will see the Welcome screen for Ubuntu and the command prompt:
 
     root@FormRx-Vultr:~#
 
-![Vultr Welcome](./images/fr0301-13_Vultr-Welcome.png#img2 "Welcome")
+![Vultr Welcome](./images/fr0301-13_Vultr-Welcome.png "Welcome")
 
 ### Next Step - Harden your server: 
 

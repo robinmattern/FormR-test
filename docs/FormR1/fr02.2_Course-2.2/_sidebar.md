@@ -2,7 +2,7 @@
 
 <h>Step 1.</h>
 
-  - [Item 1.1](/fr01.2/APP-0102_Step1.md)
+  - [Item 1.1](APP-0102_Step1.md)
 
 <h>Step 2.</h>
 
