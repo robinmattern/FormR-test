@@ -33,7 +33,7 @@ All that is needed is to put three initial files into a folder named docs.
 Then after the repository is pushed up to Github, all that is needed is to enable 
 GitHub pages in the `Settings` page for the repository.  Note, it can only be done by the owner of the repository.  
 
-![Setup Github Pages](./images/et0101-01_Setup-Github-Pages.png#img1 "Setup Github Pages")
+![Setup Github Pages](./images/et0101-01_Setup-Github-Pages.png "Setup Github Pages")
 
 And here is what Docsify looks like in GitHub Pages. 
 

@@ -43,7 +43,7 @@ systemctl start mysql
 systemctl status mysql.service
 ```
 
-![Mysql-setup-check-status](./images/et0303-05_Mysql-setup-check-status.png#img1 "Mysql-setup-check-status")
+![Mysql-setup-check-status](./images/et0303-05_Mysql-setup-check-status.png "Mysql-setup-check-status")
 
 
 - Check MySql version.
@@ -51,7 +51,7 @@ systemctl status mysql.service
 mysqladmin -p -u root version
 ```
 
-![Mysql-setup-check-version](./images/et0303-06_Mysql-setup-check-version.png#img1 "Mysql-setup-check-version")
+![Mysql-setup-check-version](./images/et0303-06_Mysql-setup-check-version.png "Mysql-setup-check-version")
 
 
  - Allow remote access to MySQL
@@ -61,20 +61,20 @@ nano /etc/mysql/mysql.conf.d/mysqld.cnf
 Change line:         bind-address            = 127.0.0.1
 to:                  bind-address            = 0.0.0.0
 ```
-![Mysql-setup-nano-bind-address](./images/et0303-07_Mysql-setup-nano-bind-address.png#img1 "Mysql-setup-nano-bind-address")
+![Mysql-setup-nano-bind-address](./images/et0303-07_Mysql-setup-nano-bind-address.png "Mysql-setup-nano-bind-address")
 
 ```
 systemctl restart mysql.service
 netstat -tulnp | grep mysql
 ```
 
-![Mysql-setup-allow-remote-access](./images/et0303-08_Mysql-setup-allow-remote-access.png#img1 "Mysql-setup-allow-remote-access")
+![Mysql-setup-allow-remote-access](./images/et0303-08_Mysql-setup-allow-remote-access.png "Mysql-setup-allow-remote-access")
 
 - Open firewall rule for port 3306
 ```
 ufw allow 3306/tcp
 ```
-![Mysql-setup-open-firewall-port-3360](./images/et0303-09_Mysql-setup-open-firewall-port-3360.png#img1 "Mysql-setup-open-firewall-port-3360")
+![Mysql-setup-open-firewall-port-3360](./images/et0303-09_Mysql-setup-open-firewall-port-3360.png "Mysql-setup-open-firewall-port-3360")
 
  
 - Create and Grant Privileges to user account: nimdas with host %
@@ -89,7 +89,7 @@ ufw allow 3306/tcp
    mysql> SELECT user,authentication_string,plugin,host FROM mysql.user;
 
    ```
-![Mysql-setup-create-admin](./images/et0303-11_Mysql-setup-create-admin.png#img1 "Mysql-setup-create-admin")
+![Mysql-setup-create-admin](./images/et0303-11_Mysql-setup-create-admin.png "Mysql-setup-create-admin")
 
  8. Stop and Start mysql From the VM console:
  ```
@@ -104,7 +104,7 @@ mysqlsh \connect nimdas@xxx.xxx.xxx.xxx:3306
 
 mysqlsh \sql SELECT user,authentication_string,plugin,host FROM mysql.user;
 ```
-![Mysql-setup-login-admin-mysqlsh-local](./images/et0303-12_Mysql-setup-login-admin-mysqlsh-local.png#img1 "Mysql-setup-login-admin-mysqlsh-local")
+![Mysql-setup-login-admin-mysqlsh-local](./images/et0303-12_Mysql-setup-login-admin-mysqlsh-local.png "Mysql-setup-login-admin-mysqlsh-local")
 
  10. From VM console check disk usage and that MySQL is running
 
@@ -114,7 +114,7 @@ df
 ps -aux | awk /mysqld/
 ```
 
-![Mysql-setup-VM-console-df-ps](./images/et0303-13_Mysql-setup-VM-console-df-ps.png#img1 "Mysql-setup-VM-console-df-ps")
+![Mysql-setup-VM-console-df-ps](./images/et0303-13_Mysql-setup-VM-console-df-ps.png "Mysql-setup-VM-console-df-ps")
  
 ### Next Step - Create Website with SSL on your server: 
 

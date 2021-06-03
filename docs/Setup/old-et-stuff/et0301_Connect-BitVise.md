@@ -4,7 +4,7 @@
 
 ### 1. Open Bitvise SSH / SFTP browser and login to the Ubuntu server on Vultr.
 
-[![Setup Bitvise](./images/et0202-02_Bitvise_Setup.png#img1_Bitvise_Setup.png)](./images/et0202-02_Bitvise_Setup.mp4 "Setup Bitvise")
+[![Setup Bitvise](./images/et0202-02_Bitvise_Setup.png_Bitvise_Setup.png)](./images/et0202-02_Bitvise_Setup.mp4 "Setup Bitvise")
 
 
  1. Save file immediately as FormRx-Vultr

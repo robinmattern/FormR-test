@@ -28,7 +28,7 @@
     + Select an existing key, or
     + Use **ssh-keygen** to create your public key and paste it into the vultr form.
 
-![Vultr-Add SSH keyTest](./images/fr0301-06_Vultr-add-SSH-key-pasted.png#img3 "Pasted Key")
+![Vultr-Add SSH keyTest](./images/fr0301-06_Vultr-add-SSH-key-pasted.png "Pasted Key")
 
 - Server Host Name and Label: FormRx-Vultr for both
 
