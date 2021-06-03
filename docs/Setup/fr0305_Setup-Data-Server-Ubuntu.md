@@ -16,13 +16,13 @@ apt-get update
 ```
 apt-get install mysql-server
 ```
-![Install MySQL](./images/fr0305-02_Ubuntu-install-mysql.png#img2 "Install MySQL")
+![Install MySQL](./images/fr0305-02_Ubuntu-install-mysql.png "Install MySQL")
 
 - Check
 ```
 mysql --version
 ```
-![Check MySQL](./images/fr0305-03_Ubuntu-check-mysql.png#img2 "Check MySQL")
+![Check MySQL](./images/fr0305-03_Ubuntu-check-mysql.png "Check MySQL")
 
 
 ### 2. Secure MySQL
