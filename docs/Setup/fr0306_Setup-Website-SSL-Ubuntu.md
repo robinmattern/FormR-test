@@ -14,7 +14,7 @@
   Username: nimda
   Initial Method: password
   Check: Store password...
-  Password: 
+  Password: xxxxxxxxx
   
   Click: log In
 

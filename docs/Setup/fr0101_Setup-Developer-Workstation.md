@@ -76,7 +76,14 @@ The following steps create the development environment on your workstation for d
 4. Click File.. Save Workspace as: myProject
 5. Close VSCode
 6. From File Explorer click on repos/myproject/myProject.code-workspace. VSCode will open to your local myProject code
+7. Change default terminal in 
+C:\Users\xxxxxxxxxx\AppData\Roaming\Code\User\settings.json
+fix this
 
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",  
+
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",  
+   
 ![VSCode-extensions](../images/et0101-10_VSCode-extensions.png "VSCode-extensions")
 
 ###    8. Markdown Preview test
