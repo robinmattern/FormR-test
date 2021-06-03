@@ -8,7 +8,7 @@
 
 ### 2. Create a new VM in VMFusion
 
-[![VMFusion Create VM](./images/et0203-01_VMFusion-Create-VM.png#img2)](./images/et0202-01_VMFusion-Create-VM.mp4 "VMFusion Create VM")
+[![VMFusion Create VM](./images/et0203-01_VMFusion-Create-VM.png)](./images/et0202-01_VMFusion-Create-VM.mp4 "VMFusion Create VM")
 
 1. Open VMFusion Virtual Machine Library
 2. Click the + icon on the top left, then click New
@@ -44,7 +44,7 @@
 
 
 
-![PuttyGen-Public key](./images/et0202-03_PuttyGen-highlight-for-paste.png#img2 "PuttyGen-Public key")
+![PuttyGen-Public key](./images/et0202-03_PuttyGen-highlight-for-paste.png "PuttyGen-Public key")
 
 ![Vultr-Add SSH key, Blank](./images/et0202-04_Vultr-add-SSH-key-blank.png#img3 "Blank Key")
 
