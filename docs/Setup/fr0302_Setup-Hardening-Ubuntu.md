@@ -3,7 +3,7 @@
 
 ### 1. Login as root to the Ubuntu server on your Vultr console
 
-![Server Login](./images/fr0302-01_Ubuntu-Server-Login.png#img2 "Server Login")
+![Server Login](./images/fr0302-01_Ubuntu-Server-Login.png "Server Login")
 
 ### 2. Create a new sudo user
 - Create a new user alias with root privileges. This user will login remotely.
@@ -15,20 +15,20 @@ passwd nimda
 ```
 grep '^sudo' /etc/group
 ```
-![New User](./images/fr0302-02_Ubuntu-New-User.png#img2 "New User")
+![New User](./images/fr0302-02_Ubuntu-New-User.png "New User")
 
 - Check user info
 ```
 cat /etc/passwd
 ```
-![Check User Info](./images/fr0302-03_Ubuntu-Check-User-Info.png#img2 "Check User Info")
+![Check User Info](./images/fr0302-03_Ubuntu-Check-User-Info.png "Check User Info")
 
 ### 3. Update and upgrade server
 
 ```
 apt-get update && apt-get upgrade
 ```
-![Update and Upgrade](./images/fr0302-04_Ubuntu-Update-Upgrade.png#img2 "Update and Upgrade")
+![Update and Upgrade](./images/fr0302-04_Ubuntu-Update-Upgrade.png "Update and Upgrade")
 
 ### 4. Install and Configure unattended-updates
 
@@ -37,13 +37,13 @@ apt-get update && apt-get upgrade
 apt-get install unattended-upgrades
 ```
 
-![Install Unattended Upgrades](./images/fr0302-05_Ubuntu-Install-Unattended-Upgrades.png#img2 "Install Unattended Upgrades")
+![Install Unattended Upgrades](./images/fr0302-05_Ubuntu-Install-Unattended-Upgrades.png "Install Unattended Upgrades")
 
 - Check installation
 ```
 systemctl status unattended-upgrades
 ```
-![Check Unattended Upgrades](./images/fr0302-06_Ubuntu-Check-Unattended-Upgrades.png#img2 "Check Unattended Upgrades")
+![Check Unattended Upgrades](./images/fr0302-06_Ubuntu-Check-Unattended-Upgrades.png "Check Unattended Upgrades")
 
 - Modify apt.conf.d/50unattended-upgrades
 ```
@@ -53,7 +53,7 @@ nano /etc/apt/apt.conf.d/50unattended-upgrades
 ```
 "${distro_id}:${distro_codename}-updates";
 ```
-![Modify apt.conf.d](./images/fr0302-07_Ubuntu-Modify-apt-conf-d.png#img2 "Modify apt.conf.d")
+![Modify apt.conf.d](./images/fr0302-07_Ubuntu-Modify-apt-conf-d.png "Modify apt.conf.d")
 
 - Uncomment and modify:
 ```
@@ -62,7 +62,7 @@ Unattended-Upgrade::Remove-Unused-Dependencies "true";
 Unattended-Upgrade::Automatic-Reboot "true";
 Unattended-Upgrade::Automatic-Reboot-Time "02:38";
 ```
-![Modify apt.conf.d-2](./images/fr0302-08_Ubuntu-Modify-apt-conf-d-2.png#img2 "Modify apt.conf.d-2")
+![Modify apt.conf.d-2](./images/fr0302-08_Ubuntu-Modify-apt-conf-d-2.png "Modify apt.conf.d-2")
 
 - Save the file
 
@@ -77,7 +77,7 @@ APT::Periodic::Download-Upgradeable-Packages "1";
 APT::Periodic::AutocleanInterval "7";
 APT::Periodic::Unattended-Upgrade "1";
 ```
-![Modify apt.conf.d-3](./images/fr0302-09_Ubuntu-Modify-apt-conf-d-3.png#img2 "Modify apt.conf.d-3")
+![Modify apt.conf.d-3](./images/fr0302-09_Ubuntu-Modify-apt-conf-d-3.png "Modify apt.conf.d-3")
 
 - Save the file
 
@@ -86,7 +86,7 @@ APT::Periodic::Unattended-Upgrade "1";
 ```
 unattended-upgrades --dry-run --debug
 ```
-![Check Unattended Upgrades](./images/fr0302-10_Ubuntu-Check-Unattended-Upgrades.png#img2 "Check Unattended Upgrades")
+![Check Unattended Upgrades](./images/fr0302-10_Ubuntu-Check-Unattended-Upgrades.png "Check Unattended Upgrades")
 
 - Reboot the server
 ```
@@ -106,7 +106,7 @@ tmpfs /run/shm tmpfs defaults,noexec,nosuid 0 0
 ```
 reboot
 ```
-![Secure Shared Memory](./images/fr0302-11_Ubuntu-secure-shared-memory.png#img2 "Secure Shared Memory")
+![Secure Shared Memory](./images/fr0302-11_Ubuntu-secure-shared-memory.png "Secure Shared Memory")
 
 ### 6. Enable SSH Login for Specific Users Only
 
@@ -121,7 +121,7 @@ nano /etc/ssh/sshd_config
 AllowUsers nimda@xxx.xxx.xxx.xxx
 ```
 
-![SSH AllowUsers](./images/fr0302-12_Ubuntu-ssh-allowusers.png#img2 "SSH AllowUsers")
+![SSH AllowUsers](./images/fr0302-12_Ubuntu-ssh-allowusers.png "SSH AllowUsers")
 
 - Save and close the file and restart sshd with this command:
 
@@ -148,7 +148,7 @@ nano /etc/issue.net
 
 -  Save and close the file.
 
-![SSH-Banner Issue.net](./images/fr0302-13_Ubuntu-ssh-banner-issue-net.png#img2 "SSH-Banner Issue.net")
+![SSH-Banner Issue.net](./images/fr0302-13_Ubuntu-ssh-banner-issue-net.png "SSH-Banner Issue.net")
 
 - Disable the banner message from Message Of The Day (motd).
 ```
@@ -161,7 +161,7 @@ nano /etc/pam.d/sshd
 #session optional pam_motd.so noupdate
 ```
 
-![SSH-Comment Out](./images/fr0302-14_Ubuntu-ssh-comment-out-pam-d.png#img2 "SSH-Comment Out")
+![SSH-Comment Out](./images/fr0302-14_Ubuntu-ssh-comment-out-pam-d.png "SSH-Comment Out")
      
 - Edit sshd_config
 
@@ -173,7 +173,7 @@ nano /etc/ssh/sshd_config
 ```
 #Banner none   with    Banner  /etc/issue.net
 ```
-![SSH-Banner Config](./images/fr0302-15_Ubuntu-ssh-banner-config.png#img2 "SSH-Banner Config")
+![SSH-Banner Config](./images/fr0302-15_Ubuntu-ssh-banner-config.png "SSH-Banner Config")
 
 - Save and close the file and restart the SSH server
      
@@ -188,7 +188,7 @@ systemctl restart sshd
 ```
 apt-get install fail2ban
 ```
-![Install Fail2Ban](./images/fr0302-16_Ubuntu-install-fail2ban.png#img2 "Install Fail2Ban")
+![Install Fail2Ban](./images/fr0302-16_Ubuntu-install-fail2ban.png "Install Fail2Ban")
 
 - Configure Fail2Ban
 ```     
@@ -204,7 +204,7 @@ filter = sshd
 logpath = /var/log/auth.log
 maxretry = 3
 ```
-![SSH-jail-local](./images/fr0302-17_Ubuntu-ssh-jail-local.png#img2 "SSH-jail-local")
+![SSH-jail-local](./images/fr0302-17_Ubuntu-ssh-jail-local.png "SSH-jail-local")
 
 - This configuration enables the jail, sets the SSH port to be monitored to 22, uses the sshd filter, sets the max login tries, and sets the log file to be monitored.
 
@@ -230,7 +230,7 @@ ufw --force enable
 ```
 ufw status
 ```
-![Enable Firewall](./images/fr0302-18_Ubuntu-enable-firewall.png#img2 "Enable Firewall")
+![Enable Firewall](./images/fr0302-18_Ubuntu-enable-firewall.png "Enable Firewall")
 ### 10. Set the server time zone
 ```
 timedatectl set-timezone America/New_York 
@@ -239,21 +239,21 @@ timedatectl set-timezone America/New_York
 ```
 timedatectl | grep “Time zone”
 ```
-![Set Time Zone](./images/fr0302-19_Ubuntu-set-timezone.png#img2 "Set Time Zone")
+![Set Time Zone](./images/fr0302-19_Ubuntu-set-timezone.png "Set Time Zone")
 
 ### 11. Create Snapshot of server in Vultr
 
 - From Vultr console select snapshots
 
-![Select Snapshots](./images/fr0302-20_Ubuntu-select-snapshots.png#img2 "Select Snapshots")
+![Select Snapshots](./images/fr0302-20_Ubuntu-select-snapshots.png "Select Snapshots")
 
 - Add a label, take snapshot
 
-![Take Snapshot](./images/fr0302-21_Ubuntu-take-snapshot.png#img2 "Take Snapshot")
+![Take Snapshot](./images/fr0302-21_Ubuntu-take-snapshot.png "Take Snapshot")
 
 - List Snapshots
 
-![List Snapshots](./images/fr0302-22_Ubuntu-list-snapshots.png#img2 "List Snapshots")
+![List Snapshots](./images/fr0302-22_Ubuntu-list-snapshots.png "List Snapshots")
 
 
 ### Next Step - Install Web Server: 
