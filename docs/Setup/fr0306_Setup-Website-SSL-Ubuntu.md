@@ -2,12 +2,12 @@
 
 1. Open Bitvise on your local workstation and login as nimda to the Ubuntu server
 
- - Open
+ - Open and initial login
 ```
  "C:\Program Files (x86)\Bitvise SSH Client\BvSsh.exe"
 ```
  - Click New Profile
- ```
+ 
  Enter:
   Host IP address: xxx.xxx.xxx.xxx.
   Port: 22
@@ -16,12 +16,43 @@
   Check: Store password...
   Password: xxxxxxxxx
   
-  Click: log In
+  Click: log In (You will be logged in via password)
 
-  Click: Save profile
+  Click: Save profile e.g. FormR1-Vultr
 
-  Click: New terminal console
-```
+  - Configure Login via Public Key
+
+  Click: New SFTP window
+
+  - In remote files pane (right)
+    - create /root/.ssh
+    - create file authorized_keys
+
+  - In local files panes (left)
+    - Navigate to C:/users/(your username)/.ssh 
+    - edit the public key file (This file was created when the Vultr server was created)
+      - Copy the one line of text. e.g.
+        ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDJjD5Am/Zphxu4m2kdd+5peA968irTcwmtp/uNglxgVe8FJCRmRriduuizc18UMprFoVA7yjI1Vk/OBc4LgW9F1R7RfQvq2T3KESqfKNbgxMUL5Kvy+7FoBHCUWd4fM+kG9jphAlUb2olVL+NfuU2bIX5q5L8pMURDPnTBROasfxUNhcYJCIsowC0J0tbZuSrmnfh5wyXMFjoQht0vCB2Fqp7RToTkCFCSoYSKOH0w69afIbEqbPLBz2T9ahiH6d59OQl8Zdnz0knGWYwHuWX9J6vku0H6JB72oLEnweETjuvELW3NX+QFZQQzNayaHiDXGexQ/kTEN1AxyuxbbVLL brucetroutman_v210511
+
+  - In the Remote Files pane (right)
+      - edit the file /root/.ssh/authorized_keys
+      - paste the public key text
+      - save the file
+      - close SFTP window
+
+  - From the Profile window
+    - Logout 
+    - Change Authentication, Initial method from 'password' to 'public key'
+    - Click the Client Key Manager link
+      - Click Import
+        - Select 'All files' then select the Private key file that matched the previously used Public key
+        - Click Import and close Client Key Manager
+    - Select the just imported key from the Client key drop down
+    - Click Login (You will be logged in via public key)
+    - IMPORTANT -- Click Save Profile !!!
+
+
+
 2. Delete nginx default files using Bitvice SFTP
 ```
 navigate to and delete:
