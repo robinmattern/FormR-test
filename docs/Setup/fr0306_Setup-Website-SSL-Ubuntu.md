@@ -7,22 +7,27 @@
  "C:\Program Files (x86)\Bitvise SSH Client\BvSsh.exe"
 ```
  - Click New Profile
- 
- Enter:
+![BitVise New Profile](./images/fr0306-01_Ubuntu-Bitvise-New-Profile.png "BitVise New Profile")
+
+ - Enter:
   Host IP address: xxx.xxx.xxx.xxx.
   Port: 22
   Username: nimda
   Initial Method: password
-  Check: Store password...
   Password: xxxxxxxxx
+
+![BitVise Initial Login](./images/fr0306-02_Ubuntu-Bitvise-Initial-Login.png "BitVise Initial Login")
   
-  Click: log In (You will be logged in via password)
+  Click log In (You will be logged in via password)
+![BitVise Click Login](./images/fr0306-03_Ubuntu-Bitvise-Click-Login.png "BitVise Click Login")
 
-  Click: Save profile e.g. FormR1-Vultr
 
-  - Configure Login via Public Key
+  Click Save profile e.g. FormR1-Vultr
+![BitVise Save Profile](./images/fr0306-04_Ubuntu-Bitvise-Save-Profile.png "BitVise Save Profile")
 
-  Click: New SFTP window
+  - Configure Login via Public Key (SSH keys are more secure than passwords)
+
+  Click New SFTP window
 
   - In remote files pane (right)
     - create /root/.ssh
@@ -52,7 +57,6 @@
     - IMPORTANT -- Click Save Profile !!!
 
 
-
 2. Delete nginx default files using Bitvice SFTP
 ```
 navigate to and delete:
@@ -61,10 +65,12 @@ navigate to and delete:
 
 /etc/nginx/sites-enabled/default
 ```
+
 - Reload nginx
 ```
 service nginx reload
 ```
+
 3. Clone simpleApp using git 
 ```
 cd /webs
