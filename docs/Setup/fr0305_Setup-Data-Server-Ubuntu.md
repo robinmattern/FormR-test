@@ -89,10 +89,15 @@ systemctl status mysql.service
 
 ![Mysql-setup-check-status](./images/fr0305-09_Ubuntu-check-status-mysql.png "Mysql-setup-check-status")
 
-### 3. Login as nimdas remotely from your local PC with MySQL Shell. --Don't save the password--
+### 3. Login as nimdas remotely from your local PC with MySQL Shell. --Don't save the password-- 
 
+- Login
 ```
 mysqlsh /connect nimdas@xxx.xxx.xxx.xxx:3306
+```
+- Check Version
+```
+mysql xxx.xxx.xxx.xxx:3306 JS> \sql SELECT VERSION();
 ```
 ![Mysql-setup-login-admin-mysqlsh-local](./images/fr0305-10_Ubuntu-login-admin-mysqlsh-local.png "Mysql-setup-login-admin-mysqlsh-local")
  
