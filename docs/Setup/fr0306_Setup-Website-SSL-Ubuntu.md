@@ -2,7 +2,7 @@
 
 1. Open Bitvise on your local workstation and login as nimda to the Ubuntu server
 
- - Open and initial login
+ - Bitvise Initial Login with password
 ```
  "C:\Program Files (x86)\Bitvise SSH Client\BvSsh.exe"
 ```
@@ -18,23 +18,32 @@
 
 ![BitVise Initial Login](./images/fr0306-02_Ubuntu-Bitvise-Initial-Login.png "BitVise Initial Login")
   
-  Click log In (You will be logged in via password)
+- Click log In (You will see Warning message and then be logged in via password)
+
 ![BitVise Click Login](./images/fr0306-03_Ubuntu-Bitvise-Click-Login.png "BitVise Click Login")
 
+![BitVise Click Login2](./images/fr0306-03_Ubuntu-Bitvise-Click-Login2.png "BitVise Click Login2")
 
-  Click Save profile e.g. FormR1-Vultr
+
+- Click Save profile icon and save as FormR1-Vultr-nimda
+
 ![BitVise Save Profile](./images/fr0306-04_Ubuntu-Bitvise-Save-Profile.png "BitVise Save Profile")
 
-  - Configure Login via Public Key (SSH keys are more secure than passwords)
+![BitVise Save Profile2](./images/fr0306-04_Ubuntu-Bitvise-Save-Profile2.png "BitVise Save Profile2")
 
-  Click New SFTP window
+2. Configure Login via Public Key (SSH keys are more secure than passwords)
+
+- Open Bitvise profile, Formr-Vultr-nimda, click Log in, then click New SFTP window icon
+
+[BitVise New SFTP window](./images/fr0306-04_Ubuntu-Bitvise-New-SFTP-window.png "BitVise New SFTP window")
+
 
   - In remote files pane (right)
-    - create /root/.ssh
+    - create folder /root/.ssh
     - create file authorized_keys
 
   - In local files panes (left)
-    - Navigate to C:/users/(your username)/.ssh 
+    - Navigate to C:/users/(your local computer username)/.ssh 
     - edit the public key file (This file was created when the Vultr server was created)
       - Copy the one line of text. e.g.
         ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDJjD5Am/Zphxu4m2kdd+5peA968irTcwmtp/uNglxgVe8FJCRmRriduuizc18UMprFoVA7yjI1Vk/OBc4LgW9F1R7RfQvq2T3KESqfKNbgxMUL5Kvy+7FoBHCUWd4fM+kG9jphAlUb2olVL+NfuU2bIX5q5L8pMURDPnTBROasfxUNhcYJCIsowC0J0tbZuSrmnfh5wyXMFjoQht0vCB2Fqp7RToTkCFCSoYSKOH0w69afIbEqbPLBz2T9ahiH6d59OQl8Zdnz0knGWYwHuWX9J6vku0H6JB72oLEnweETjuvELW3NX+QFZQQzNayaHiDXGexQ/kTEN1AxyuxbbVLL brucetroutman_v210511
