@@ -35,12 +35,20 @@
 
 - Open Bitvise profile, Formr-Vultr-nimda, click Log in, then click New SFTP window icon
 
-[BitVise New SFTP window](./images/fr0306-04_Ubuntu-Bitvise-New-SFTP-window.png "BitVise New SFTP window")
+![BitVise New SFTP window](./images/fr0306-05_Ubuntu-Bitvise-New-SFTP-window.png "BitVise New SFTP window")
 
+![BitVise New SFTP window2](./images/fr0306-05_Ubuntu-Bitvise-New-SFTP-window2.png "BitVise New SFTP window2")
 
-  - In remote files pane (right)
-    - create folder /root/.ssh
-    - create file authorized_keys
+  - Right click in remote files pane (right)
+    - create folder: /root/.ssh
+![BitVise Create SSH Folder](./images/fr0306-06_Ubuntu-Bitvise-Create-SSH-Folder.png "BitVise Create SSH Folder")
+
+![BitVise Create SSH Folder2](./images/fr0306-06_Ubuntu-Bitvise-Create-SSH-Folder2.png "BitVise Create SSH Folder2")
+
+    - navigate to folder /root/.ssh and create file: authorized_keys
+![BitVise Create File authorized_keys](./images/fr0306-06_Ubuntu-Bitvise-Create-File-authorized_keys.png "BitVise Create File authorized_keys")
+
+![BitVise Create File authorized_keys2](./images/fr0306-06_Ubuntu-Bitvise-Create-File-authorized_keys2.png "BitVise Create File authorized_keys2") 
 
   - In local files panes (left)
     - Navigate to C:/users/(your local computer username)/.ssh 
