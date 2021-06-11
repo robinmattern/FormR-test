@@ -131,50 +131,73 @@ xxx.xxx.xxx.xxx:5000
 ```
 pm2 start app.js 
 ```
+![BitVise PM2 start](./images/fr0306-08_Ubuntu-Bitvise-PM2-start.png "BitVise PM2 start")
+
 - Allow pm2 to start on boot up
 ```
 pm2 startup systemd
 ```
+![BitVise PM2 startup](./images/fr0306-08_Ubuntu-Bitvise-PM2-startup.png "BitVise PM2 startup")
+
 - Save pm2 configuration
 ```
 pm2 save --force
 ```
+![BitVise PM2 save](./images/fr0306-08_Ubuntu-Bitvise-PM2-save.png "BitVise PM2 save")
+
 - Reboot server and test from local browser, xxx.xxx.xxx.xxx:5000
+
+![BitVise Browse simpleApp](./images/fr0306-07_Ubuntu-Bitvise-Browse-simpleApp.png "BitVise Browse simpleApp")
 
 6. Setup nginx proxy 
 
 - Copy simpleApp.conf file
 ```
-Using Bitvise copy /webs/simpleApp /etc/nginx/sites-available/simpleApp.conf to
-/etc/nginx/sites-available/simpleApp.conf
+cp /webs/simpleApp/etc/nginx/sites-available/simpleApp.conf /etc/nginx/sites-available/simpleApp.conf
 ```
 
 - Create symbolic link to /etc/nginx/sites-enabled  
 ```
 ln -s /etc/nginx/sites-available/simpleApp.conf /etc/nginx/sites-enabled/simpleApp.conf
 ```
-- Reload nginx
+![BitVise nginx conf file](./images/fr0306-08_Ubuntu-Bitvise-nginx-conf-file.png "BitVise nginx conf file")
+
+- Test and Reload nginx
 ```
+nginx -t
 systemctl reload nginx
 ```
+![BitVise nginx reload](./images/fr0306-08_Ubuntu-Bitvise-nginx-reload.png "BitVise nginx reload")
+
 7. Point DNS to server
 ```
 Update your DNS record to point formr.net to the server IP address.
 ```
+![BitVise Point DNS](./images/fr0306-09_Ubuntu-Bitvise-Point-DNS.png "BitVise Point DNS")
+
 8. Test your website
 
 - Browse to your web site via http
 ```
 http://yoururl
 ```
-- Add Letsencrypt SSL certificate
+![BitVise Browse your website](./images/fr0306-10_Ubuntu-Bitvise-Browse-your-website.png "BitVise Browse your website")
+
+9. Add SSL certificate using Letsencrypt
 ```
 certbot --nginx -d yoururl -d www.yoururl
 ```
+![BitVise Add SSL](./images/fr0306-11_Ubuntu-Bitvise-add-ssl.png "BitVise Add SSL")
+
+![BitVise Add SSL2](./images/fr0306-11_Ubuntu-Bitvise-add-ssl2.png "BitVise Add SSL2")
+
+![BitVise Add SSL3](./images/fr0306-11_Ubuntu-Bitvise-add-ssl3.png "BitVise Add SSL3")
+
 - Browse to your web via https
 ```
 https://yoururl
 ```
+![BitVise Browse with https](./images/fr0306-12_Ubuntu-Bitvise-Browse-with-https.png "BitVise Browse with https")
 
 9. Close port 5000
 ```
@@ -184,3 +207,7 @@ ufw delete 8
 
 ufw delete 4
 ```
+![BitVise Close Port 5000](./images/fr0306-13_Ubuntu-Bitvise-Close-Port-5000.png "BitVise Close Port 5000")
+
+
+### Congratulations your Ubuntu server is secure and ready for action.  
