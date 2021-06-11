@@ -1,6 +1,6 @@
 # Setup Instructions for creating a simple website with SSL
 
-1. Open Bitvise on your local workstation and login as nimda to the Ubuntu server
+1. Use Bitvise securely. Open Bitvise on your local workstation and login as nimda to the Ubuntu server
 
  - Bitvise Initial Login with password
 ```
@@ -41,54 +41,65 @@
 
   - Right click in remote files pane (right)
     - create folder: /root/.ssh
-![BitVise Create SSH Folder](./images/fr0306-06_Ubuntu-Bitvise-Create-SSH-Folder.png "BitVise Create SSH Folder")
+![BitVise Create SSH Folder](./images/fr0306-05_Ubuntu-Bitvise-Create-SSH-Folder.png "BitVise Create SSH Folder")
 
-![BitVise Create SSH Folder2](./images/fr0306-06_Ubuntu-Bitvise-Create-SSH-Folder2.png "BitVise Create SSH Folder2")
+![BitVise Create SSH Folder2](./images/fr0306-05_Ubuntu-Bitvise-Create-SSH-Folder2.png "BitVise Create SSH Folder2")
 
     - navigate to folder /root/.ssh and create file: authorized_keys
-![BitVise Create File authorized_keys](./images/fr0306-06_Ubuntu-Bitvise-Create-File-authorized_keys.png "BitVise Create File authorized_keys")
+![BitVise Create File authorized_keys](./images/fr0306-05_Ubuntu-Bitvise-Create-File-authorized_keys.png "BitVise Create File authorized_keys")
 
-![BitVise Create File authorized_keys2](./images/fr0306-06_Ubuntu-Bitvise-Create-File-authorized_keys2.png "BitVise Create File authorized_keys2") 
+![BitVise Create File authorized_keys2](./images/fr0306-05_Ubuntu-Bitvise-Create-File-authorized_keys2.png "BitVise Create File authorized_keys2") 
 
   - In local files panes (left)
-    - Navigate to C:/users/(your local computer username)/.ssh 
-    - edit the public key file (This file was created when the Vultr server was created)
-      - Copy the one line of text. e.g.
-        ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDJjD5Am/Zphxu4m2kdd+5peA968irTcwmtp/uNglxgVe8FJCRmRriduuizc18UMprFoVA7yjI1Vk/OBc4LgW9F1R7RfQvq2T3KESqfKNbgxMUL5Kvy+7FoBHCUWd4fM+kG9jphAlUb2olVL+NfuU2bIX5q5L8pMURDPnTBROasfxUNhcYJCIsowC0J0tbZuSrmnfh5wyXMFjoQht0vCB2Fqp7RToTkCFCSoYSKOH0w69afIbEqbPLBz2T9ahiH6d59OQl8Zdnz0knGWYwHuWX9J6vku0H6JB72oLEnweETjuvELW3NX+QFZQQzNayaHiDXGexQ/kTEN1AxyuxbbVLL brucetroutman_v210511
+    - Navigate to C:/users/(your local computer username)/.ssh and edit the public key file (This file was created when the Vultr server was created)
+    - Copy the one line of text. e.g.
+    ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDJjD5Am/Zphxu4m2kdd+5peA968irTcwmtp/uNglxgVe8FJCRmRriduuizc18UMprFoVA7yjI1Vk/OBc4LgW9F1R7RfQvq2T3KESqfKNbgxMUL5Kvy+7FoBHCUWd4fM+kG9jphAlUb2olVL+NfuU2bIX5q5L8pMURDPnTBROasfxUNhcYJCIsowC0J0tbZuSrmnfh5wyXMFjoQht0vCB2Fqp7RToTkCFCSoYSKOH0w69afIbEqbPLBz2T9ahiH6d59OQl8Zdnz0knGWYwHuWX9J6vku0H6JB72oLEnweETjuvELW3NX+QFZQQzNayaHiDXGexQ/kTEN1AxyuxbbVLL brucetroutman_v210511
+
+![BitVise Copy public key](./images/fr0306-05_Ubuntu-Bitvise-Copy-public-key.png "BitVise Copy public key") 
+
+![BitVise Copy public key2](./images/fr0306-05_Ubuntu-Bitvise-Copy-public-key2.png "BitVise Copy public key2") 
+
 
   - In the Remote Files pane (right)
-      - edit the file /root/.ssh/authorized_keys
-      - paste the public key text
-      - save the file
+      - Edit the file /root/.ssh/authorized_keys
+![BitVise Edit authorized_keys](./images/fr0306-05_Ubuntu-Bitvise-Edit-authorized_keys.png "BitVise Edit authorized_keys") 
+
+      - Paste the public key text and Save
+![BitVise Paste public key](./images/fr0306-05_Ubuntu-Bitvise-Paste-public-key.png "BitVise Paste public key")
+
+
       - close SFTP window
 
   - From the Profile window
     - Logout 
-    - Change Authentication, Initial method from 'password' to 'public key'
-    - Click the Client Key Manager link
-      - Click Import
-        - Select 'All files' then select the Private key file that matched the previously used Public key
-        - Click Import and close Client Key Manager
-    - Select the just imported key from the Client key drop down
-    - Click Login (You will be logged in via public key)
+    - Change Authentication, Initial method from 'password' to 'public key' and Click the Client Key Manager link, then click Import
+![BitVise Client Key Manager](./images/fr0306-05_Ubuntu-Bitvise-Client-Key-Manager.png "BitVise Client Key Manager")
+
+![BitVise Client Key Manager2](./images/fr0306-05_Ubuntu-Bitvise-Client-Key-Manager2.png "BitVise Client Key Manager2")
+
+    - Select 'All files' then select the Private key file that matched the previously used Public key then Click Import and close Client Key Manager
+![BitVise Select Private Key](./images/fr0306-05_Ubuntu-Bitvise-Select-Private-Key.png "BitVise Select Private Key")
+
+![BitVise Select Private Key2](./images/fr0306-05_Ubuntu-Bitvise-Select-Private-Key2.png "BitVise Select Private Key2")
+
+![BitVise Select Private Key3](./images/fr0306-05_Ubuntu-Bitvise-Select-Private-Key3.png "BitVise Select Private Key3")
+
+    - Select the just imported key (Profile 1) from the Client key drop down and Click Login (You will be logged in via public key)
+![BitVise Select Client Key](./images/fr0306-05_Ubuntu-Bitvise-Select-Client-Key.png "BitVise Select Client Key")
+
     - IMPORTANT -- Click Save Profile !!!
+![BitVise Save Profile](./images/fr0306-05_Ubuntu-Bitvise-Save-Profile.png "BitVise Save Profile")
 
+3. Using Bitvice New Terminal console delete nginx default files 
 
-2. Delete nginx default files using Bitvice SFTP
 ```
-navigate to and delete:
+unlink /etc/nginx/sites-available/default
 
-/etc/nginx/sites-available/default
-
-/etc/nginx/sites-enabled/default
+unlink /etc/nginx/sites-enabled/default
 ```
+![BitVise Unlink nginx default](./images/fr0306-06_Ubuntu-Bitvise-Unlink-nginx-default.png "BitVise Unlink nginx default")
 
-- Reload nginx
-```
-service nginx reload
-```
-
-3. Clone simpleApp using git 
+4. Clone simpleApp using git 
 ```
 cd /webs
 git clone https://github.com/brucetroutman-gmail/simpleApp.git
@@ -102,19 +113,21 @@ ls
 ```
 ufw allow 5000
 ```
+![BitVise Clone simpleApp](./images/fr0306-07_Ubuntu-Bitvise-Clone-simpleApp.png "BitVise Clone simpleApp")
+
 - Start app.js on the server
 ```
 node app.js
 ```
-App listening on port 5000!  
+![BitVise Run simpleApp](./images/fr0306-07_Ubuntu-Bitvise-Run-simpleApp.png "BitVise Run simpleApp")
 
 - Use your local browser to test your server
 ```
 xxx.xxx.xxx.xxx:5000
 ```
-Welcome to FormR ...
+![BitVise Browse simpleApp](./images/fr0306-07_Ubuntu-Bitvise-Browse-simpleApp.png "BitVise Browse simpleApp")
 
-4. Setup pm2 to run website automatically
+5. Setup pm2 to run website automatically
 ```
 pm2 start app.js 
 ```
@@ -128,7 +141,7 @@ pm2 save --force
 ```
 - Reboot server and test from local browser, xxx.xxx.xxx.xxx:5000
 
-5. Setup nginx proxy 
+6. Setup nginx proxy 
 
 - Copy simpleApp.conf file
 ```
@@ -144,11 +157,11 @@ ln -s /etc/nginx/sites-available/simpleApp.conf /etc/nginx/sites-enabled/simpleA
 ```
 systemctl reload nginx
 ```
-6. Point DNS to server
+7. Point DNS to server
 ```
 Update your DNS record to point formr.net to the server IP address.
 ```
-7. Test your website
+8. Test your website
 
 - Browse to your web site via http
 ```
@@ -163,7 +176,7 @@ certbot --nginx -d yoururl -d www.yoururl
 https://yoururl
 ```
 
-8. Close port 5000
+9. Close port 5000
 ```
 ufw status numbered
 

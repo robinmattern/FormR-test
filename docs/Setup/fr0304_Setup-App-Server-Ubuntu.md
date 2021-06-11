@@ -63,12 +63,23 @@ ps -aux | egrep 'docsify'
 ![Check Docsify](./images/fr0304-09_Ubuntu-check-docsify.png "Check Docsify")
 
 
-### 5. Create Snapshot of server in Vultr
+### 5. Install Express
 ```
+cd /webs
+npm init
+```
+![npm init](./images/fr0304-10_Ubuntu-npm-init.png "npm init")
+```
+npm install express
+```
+![Install Express](./images/fr0304-11_Ubuntu-install-express.png "Install Express")
+
+### 6. Create Snapshot of server in Vultr
+``` 
 Use label: FormR-Installed-App-Server
 ```
 
-![Take Snapshot](./images/fr0304-10_Ubuntu-take-snapshot.png "Take Snapshot")
+![Take Snapshot](./images/fr0304-12_Ubuntu-take-snapshot.png "Take Snapshot")
 
 
 ### Next Step - Install Database Server: 
