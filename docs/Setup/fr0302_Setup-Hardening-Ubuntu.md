@@ -115,6 +115,7 @@ reboot
 nano /etc/ssh/sshd_config
 ```
 
+
 - At the bottom of the file, add the line: (Use your own username and your workstation's IP address)
 
 ```
@@ -237,7 +238,7 @@ timedatectl set-timezone America/New_York
 ```
 - Check TimeZone
 ```
-timedatectl | grep “Time zone”
+timedatectl
 ```
 ![Set Time Zone](./images/fr0302-19_Ubuntu-set-timezone.png "Set Time Zone")
 
