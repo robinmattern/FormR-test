@@ -6,7 +6,9 @@
 ```
  "C:\Program Files (x86)\Bitvise SSH Client\BvSsh.exe"
 ```
+
  - Click New Profile
+ 
 ![BitVise New Profile](./images/fr0306-01_Ubuntu-Bitvise-New-Profile.png "BitVise New Profile")
 
  - Enter:
@@ -40,12 +42,15 @@
 ![BitVise New SFTP window2](./images/fr0306-05_Ubuntu-Bitvise-New-SFTP-window2.png "BitVise New SFTP window2")
 
   - Right click in remote files pane (right)
+
     - create folder: /root/.ssh
+
 ![BitVise Create SSH Folder](./images/fr0306-05_Ubuntu-Bitvise-Create-SSH-Folder.png "BitVise Create SSH Folder")
 
 ![BitVise Create SSH Folder2](./images/fr0306-05_Ubuntu-Bitvise-Create-SSH-Folder2.png "BitVise Create SSH Folder2")
 
     - navigate to folder /root/.ssh and create file: authorized_keys
+
 ![BitVise Create File authorized_keys](./images/fr0306-05_Ubuntu-Bitvise-Create-File-authorized_keys.png "BitVise Create File authorized_keys")
 
 ![BitVise Create File authorized_keys2](./images/fr0306-05_Ubuntu-Bitvise-Create-File-authorized_keys2.png "BitVise Create File authorized_keys2") 
@@ -62,9 +67,11 @@
 
   - In the Remote Files pane (right)
       - Edit the file /root/.ssh/authorized_keys
+
 ![BitVise Edit authorized_keys](./images/fr0306-05_Ubuntu-Bitvise-Edit-authorized_keys.png "BitVise Edit authorized_keys") 
 
       - Paste the public key text and Save
+
 ![BitVise Paste public key](./images/fr0306-05_Ubuntu-Bitvise-Paste-public-key.png "BitVise Paste public key")
 
 
@@ -73,11 +80,13 @@
   - From the Profile window
     - Logout 
     - Change Authentication, Initial method from 'password' to 'public key' and Click the Client Key Manager link, then click Import
+
 ![BitVise Client Key Manager](./images/fr0306-05_Ubuntu-Bitvise-Client-Key-Manager.png "BitVise Client Key Manager")
 
 ![BitVise Client Key Manager2](./images/fr0306-05_Ubuntu-Bitvise-Client-Key-Manager2.png "BitVise Client Key Manager2")
 
     - Select 'All files' then select the Private key file that matched the previously used Public key then Click Import and close Client Key Manager
+
 ![BitVise Select Private Key](./images/fr0306-05_Ubuntu-Bitvise-Select-Private-Key.png "BitVise Select Private Key")
 
 ![BitVise Select Private Key2](./images/fr0306-05_Ubuntu-Bitvise-Select-Private-Key2.png "BitVise Select Private Key2")
@@ -85,9 +94,11 @@
 ![BitVise Select Private Key3](./images/fr0306-05_Ubuntu-Bitvise-Select-Private-Key3.png "BitVise Select Private Key3")
 
     - Select the just imported key (Profile 1) from the Client key drop down and Click Login (You will be logged in via public key)
+
 ![BitVise Select Client Key](./images/fr0306-05_Ubuntu-Bitvise-Select-Client-Key.png "BitVise Select Client Key")
 
     - IMPORTANT -- Click Save Profile !!!
+
 ![BitVise Save Profile](./images/fr0306-05_Ubuntu-Bitvise-Save-Profile.png "BitVise Save Profile")
 
 3. Using Bitvice New Terminal console delete nginx default files 
@@ -97,6 +108,7 @@ unlink /etc/nginx/sites-available/default
 
 unlink /etc/nginx/sites-enabled/default
 ```
+
 ![BitVise Unlink nginx default](./images/fr0306-06_Ubuntu-Bitvise-Unlink-nginx-default.png "BitVise Unlink nginx default")
 
 4. Clone simpleApp using git 
@@ -113,36 +125,42 @@ ls
 ```
 ufw allow 5000
 ```
+
 ![BitVise Clone simpleApp](./images/fr0306-07_Ubuntu-Bitvise-Clone-simpleApp.png "BitVise Clone simpleApp")
 
 - Start app.js on the server
 ```
 node app.js
 ```
+
 ![BitVise Run simpleApp](./images/fr0306-07_Ubuntu-Bitvise-Run-simpleApp.png "BitVise Run simpleApp")
 
 - Use your local browser to test your server
 ```
 xxx.xxx.xxx.xxx:5000
 ```
+
 ![BitVise Browse simpleApp](./images/fr0306-07_Ubuntu-Bitvise-Browse-simpleApp.png "BitVise Browse simpleApp")
 
 5. Setup pm2 to run website automatically
 ```
 pm2 start app.js 
 ```
+
 ![BitVise PM2 start](./images/fr0306-08_Ubuntu-Bitvise-PM2-start.png "BitVise PM2 start")
 
 - Allow pm2 to start on boot up
 ```
 pm2 startup systemd
 ```
+
 ![BitVise PM2 startup](./images/fr0306-08_Ubuntu-Bitvise-PM2-startup.png "BitVise PM2 startup")
 
 - Save pm2 configuration
 ```
 pm2 save --force
 ```
+
 ![BitVise PM2 save](./images/fr0306-08_Ubuntu-Bitvise-PM2-save.png "BitVise PM2 save")
 
 - Reboot server and test from local browser, xxx.xxx.xxx.xxx:5000
@@ -160,6 +178,7 @@ cp /webs/simpleApp/etc/nginx/sites-available/simpleApp.conf /etc/nginx/sites-ava
 ```
 ln -s /etc/nginx/sites-available/simpleApp.conf /etc/nginx/sites-enabled/simpleApp.conf
 ```
+
 ![BitVise nginx conf file](./images/fr0306-08_Ubuntu-Bitvise-nginx-conf-file.png "BitVise nginx conf file")
 
 - Test and Reload nginx
@@ -167,12 +186,14 @@ ln -s /etc/nginx/sites-available/simpleApp.conf /etc/nginx/sites-enabled/simpleA
 nginx -t
 systemctl reload nginx
 ```
+
 ![BitVise nginx reload](./images/fr0306-08_Ubuntu-Bitvise-nginx-reload.png "BitVise nginx reload")
 
 7. Point DNS to server
 ```
 Update your DNS record to point formr.net to the server IP address.
 ```
+
 ![BitVise Point DNS](./images/fr0306-09_Ubuntu-Bitvise-Point-DNS.png "BitVise Point DNS")
 
 8. Test your website
@@ -181,12 +202,14 @@ Update your DNS record to point formr.net to the server IP address.
 ```
 http://yoururl
 ```
+
 ![BitVise Browse your website](./images/fr0306-10_Ubuntu-Bitvise-Browse-your-website.png "BitVise Browse your website")
 
 9. Add SSL certificate using Letsencrypt
 ```
 certbot --nginx -d yoururl -d www.yoururl
 ```
+
 ![BitVise Add SSL](./images/fr0306-11_Ubuntu-Bitvise-add-ssl.png "BitVise Add SSL")
 
 ![BitVise Add SSL2](./images/fr0306-11_Ubuntu-Bitvise-add-ssl2.png "BitVise Add SSL2")
@@ -197,6 +220,7 @@ certbot --nginx -d yoururl -d www.yoururl
 ```
 https://yoururl
 ```
+
 ![BitVise Browse with https](./images/fr0306-12_Ubuntu-Bitvise-Browse-with-https.png "BitVise Browse with https")
 
 9. Close port 5000
@@ -207,7 +231,8 @@ ufw delete 8
 
 ufw delete 4
 ```
+
 ![BitVise Close Port 5000](./images/fr0306-13_Ubuntu-Bitvise-Close-Port-5000.png "BitVise Close Port 5000")
 
 
-### Congratulations your Ubuntu server is secure and ready for action.  
+## Congratulations your Ubuntu server is secure and ready for action.  
