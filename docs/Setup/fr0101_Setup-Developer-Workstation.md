@@ -9,7 +9,7 @@ The following steps create the development environment on your workstation for d
 
 ![Windows-Update](./images/fr0101-01_Windows-Update.png "Windows-Update")
 
-###    2. Create two folders:
+###    2. Create two folders at C:\
 ```
  'repos' (local copies of your gitHub repos)
  'remotes' (local copies of remote server files)
@@ -20,50 +20,104 @@ The following steps create the development environment on your workstation for d
 
 ###    3. Install or open Chrome browser
 
-1. Install Extensions:
+- Install Chrome Extensions
 
-        1. React Developers Tools
-        2. Markdown Preview Plus
-            1. Turn on: Allow access to file URLs in Markdown Preview Plus settings
+```
+https://chrome.google.com/webstore/category/extensions?hl=en-US
+```
 
 ![Chrome-extensions](./images/fr0101-03_Chrome-extensions.png "Chrome-extensions")
 
+- Add Markdown Preview Plus
+
+![Chrome-extensions1](./images/fr0101-03_Chrome-extensions1.png "Chrome-extensions1")
+
+- Allow access to file URLs 
+
+```
+chrome://extensions/?id=febilkbfcbhebfnokafefeacimjdckgl
+```
+
+![Chrome-extensions2](./images/fr0101-03_Chrome-extensions2.png "Chrome-extensions2")
+
+- Add React Developers Tools
+
+![Chrome-extensions3](./images/fr0101-03_Chrome-extensions3.png "Chrome-extensions3")
+
+- Check the installations
+
+```
+chrome://extensions/
+```
+
+![Chrome-extensions4](./images/fr0101-03_Chrome-extensions4.png "Chrome-extensions4")
+
 ###    4. Create an account or sign into GitHub
-1. Create a new repository: 'myProject'. 
-2. Select Private and check ReadMe file. 
+- Create a new repository: 'myProject'. 
+
+![Create New Repository](./images/fr0101-04_Create-New-Repository.png "Create New Repository")
+
+
+- Select Private and check ReadMe file. 
 
 ![GitHub-myProject](./images/fr0101-04_GitHub-myProject.png "GitHub-myProject")
 
-3. Change the Readme.md file to: 
+- Edit the Readme.md file: 
+
+![GitHub-myProject-readme](./images/fr0101-04_GitHub-myProject-readme.png "GitHub-myProject-readme")
+
 ```
 # myProject was created on mm/dd/yyyy.
 ```
-![GitHub-myProject-readme](./images/fr0101-05_GitHub-myProject-readme.png "GitHub-myProject-readme")
+
+![GitHub-myProject-readme2](./images/fr0101-04_GitHub-myProject-readme2.png "GitHub-myProject-readme2")
+
+- Commit changes
+
+![GitHub-myProject-readme3](./images/fr0101-04_GitHub-myProject-readme3.png "GitHub-myProject-readme3")
+
+![GitHub-myProject-readme4](./images/fr0101-04_GitHub-myProject-readme4.png "GitHub-myProject-readme4")
 
 ###    5. Install GitHub Desktop and Clone myProject
-1. Follow the instructions at: https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/installing-github-desktop
 
-![GitHub-desktop](./images/fr0101-06_GitHub-desktop.png "GitHub-desktop")
+- Follow the instructions at: https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/installing-github-desktop
 
-2. Clone myProject
-    1. Login to your GitHub account        
-    2. From Let's get started select Clone a repository
-    3. Select your myProjects repo
-    4. Set the local path to your Repos folder from Step 2 above
-    5. Click Clone
-    6. Validate that the cloning was successful
+![GitHub-desktop](./images/fr0101-05_GitHub-desktop.png "GitHub-desktop")
 
-![GitHub-desktop-clone](./images/fr0101-07_GitHub-desktop-clone.png "GitHub-desktop-clone")
+- Login to your GitHub account        
+
+![GitHub-Signin](./images/fr0101-05_GitHub-signin.png "GitHub-signin")
+
+- From Let's get started select Clone a repository
+
+- Select your myProjects repo
+
+- Set the local path to your Repos folder from Step 2 above
+
+- Click Clone
+
+![GitHub-clone](./images/fr0101-05_GitHub-clone.png "GitHub-clone")
+
+- Validate that the cloning was successful
+
+![GitHub-validate-clone](./images/fr0101-05_GitHub-validate-clone.png "GitHub-validate-clone")
 
 ###    6. Download Git, if not already installed
-1. Download from http://git.scm.com
+
+- Download from
+```
+ https://git-scm.com/download/win
+```
+
+
+
 2. Select all the default values
 
-![Git-for-Windows](./images/fr0101-08_Git-for-Windows.png "Git-for-Windows")
+![Git-for-Windows](./images/fr0101-06_Git-for-Windows.png "Git-for-Windows")
 
 ###    7. Open or Install VSCode
 
-![VSCode](./images/fr0101-09_VSCode.png "VSCode")
+![VSCode](./images/fr0101-07_VSCode.png "VSCode")
 
 1. Pin it to Task Bar 
 2. Install Extensions
