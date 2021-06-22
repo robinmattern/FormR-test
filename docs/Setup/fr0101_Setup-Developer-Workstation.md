@@ -109,83 +109,169 @@ chrome://extensions/
  https://git-scm.com/download/win
 ```
 
-
-
-2. Select all the default values
-
 ![Git-for-Windows](./images/fr0101-06_Git-for-Windows.png "Git-for-Windows")
+
+- Allow changes
+
+![Git-for-Windows1](./images/fr0101-06_Git-for-Windows1.png "Git-for-Windows1") 
+
+- Select all the default values and install
+
+![Git-for-Windows2](./images/fr0101-06_Git-for-Windows2.png "Git-for-Windows2")
+
+- Finish Install
+
+![Git-for-Windows3](./images/fr0101-06_Git-for-Windows3.png "Git-for-Windows3")
+
+- Open Git Bash
+
+![Git-for-Windows4](./images/fr0101-06_Git-for-Windows4.png "Git-for-Windows4")
 
 ###    7. Open or Install VSCode
 
 ![VSCode](./images/fr0101-07_VSCode.png "VSCode")
 
-1. Pin it to Task Bar 
-2. Install Extensions
-    1. GitLens
-    2. Prettier
-    3. React Snippets
-2. Click File.. AutoSave
-3. Click File.. Open folder : repos/myproject
-4. Click File.. Save Workspace as: myProject
-5. Close VSCode
-6. From File Explorer click on repos/myproject/myProject.code-workspace. VSCode will open to your local myProject code
-7. Change default terminal in 
-C:\Users\xxxxxxxxxx\AppData\Roaming\Code\User\settings.json
-fix this
+- Pin it to Task Bar 
 
-    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",  
+![VSCode2](./images/fr0101-07_VSCode2.png "VSCode2")
 
-    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",  
-   
-![VSCode-extensions](./images/fr0101-10_VSCode-extensions.png "VSCode-extensions")
+- Install Extensions
+
+![VSCode3](./images/fr0101-07_VSCode3.png "VSCode3")
+
+    - GitLens
+
+![VSCode4](./images/fr0101-07_VSCode4.png "VSCode4")
+
+    - Prettier
+
+![VSCode5](./images/fr0101-07_VSCode5.png "VSCode5")
+
+    - React Snippets
+
+![VSCode6](./images/fr0101-07_VSCode6.png "VSCode6")
+
+![VSCode6a](./images/fr0101-07_VSCode6a.png "VSCode6a")
+
+
+- Click File.. AutoSave
+
+![VSCode7](./images/fr0101-07_VSCode7.png "VSCode7")
+
+- Click File.. Open folder : repos/myproject
+
+![VSCode8](./images/fr0101-07_VSCode8.png "VSCode8")
+
+![VSCode8a](./images/fr0101-07_VSCode8a.png "VSCode8a")
+
+![VSCode8b](./images/fr0101-07_VSCode8b.png "VSCode8b")
+
+- Click File.. Save Workspace as: myProject.code.workspace
+
+![VSCode9](./images/fr0101-07_VSCode9.png "VSCode9")
+
+![VSCode9a](./images/fr0101-07_VSCode9a.png "VSCode9a")
+
+- Close VSCode
+
+- From File Explorer click on repos/myproject/myProject.code-workspace. VSCode will open to your local myProject code
+
+![VSCode10](./images/fr0101-07_VSCode10.png "VSCode10")
+
+![VSCode10a](./images/fr0101-07_VSCode10a.png "VSCode10a")
+
+- Change default terminal in VSCode
+
+```
+Using Notepad, edit:
+ 
+ C:\Users\xxxxxxxxxx\AppData\Roaming\Code\User\settings.json 
+ 
+ and add this line at the bottom of the file:
+
+"terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",  
+```
+  
+![VSCode11](./images/fr0101-07_VSCode11.png "VSCode11")
+
+![VSCode11a](./images/fr0101-07_VSCode11a.png "VSCode11a")
+
+- From VSCode open a new Terminal
+
+![VSCode11b](./images/fr0101-07_VSCode11b.png "VSCode11b")
+
+![VSCode11c](./images/fr0101-07_VSCode11c.png "VSCode11c")
+
 
 ###    8. Markdown Preview test
-1. Open VSCode
-2. Click on the ReadMe.md file and add:
+
+- Open VSCode and click on the ReadMe.md file and add these lines:
 ```
     1. My first update was changed locally.
     
     2. I previewed it in VSCode and Chrome.
 ```
-6. Click View.. Command Palette
-7. Type: >Markdown: Open Preview to the Side, your preview will display.
-8. From File Explorer right click on Readme.md and open with Chrome, your preview will display.
 
-![Markdown-preview](./images/fr0101-11_Markdown-preview.png "Markdown-preview")
+![Markdown-Preview](./images/fr0101-08_Markdown-Preview.png "Markdown-Preview")
+
+![Markdown-Preview2](./images/fr0101-08_Markdown-Preview2.png "Markdown-Preview2")
+
+- Click View.. Command Palette and type: >Markdown: Open Preview to the Side, your preview will display.
+
+![Markdown-Preview3](./images/fr0101-08_Markdown-Preview3.png "Markdown-Preview3")
+
+![Markdown-Preview4](./images/fr0101-08_Markdown-Preview4.png "Markdown-Preview4")
+
+- From File Explorer right click on Readme.md then Open With and navigate to Chrome.exe, your preview will display.
+
+![Markdown-Preview5](./images/fr0101-08_Markdown-Preview5.png "Markdown-Preview5")
+
+![Markdown-Preview6](./images/fr0101-08_Markdown-Preview6.png "Markdown-Preview6") 
 
 
-###    9. Push to GitHub
-1. From VSCode.. Click the Control Source icon with the 2
-2. In the Message textbox, type: Updated Readme.md
-3. Click on the checkmark above the Message textbox and enter "Updated Readme.md"
+###    9. Push and Pull with GitHub
 
-![VSCode-source-commit](./images/fr0101-12_VSCode-source-commit.png "VSCode-source-commit")
+- From VSCode.. Click the Control Source icon with the 2
 
-4. Click the Synchronize icon o the left bottom of the VSCode window. You will be asked to login with your GitHub credentials.
+![Github-push](./images/fr0101-09_Github-push.png "Github-push") 
 
-![VSCode-source-sync](./images/fr0101-13_VSCode-source-sync.png "VSCode-source-sync")
+- In the Message textbox, type: Updated Readme.md
 
-5. Login to GitHub
-    1. Select the myProject repository
-    2. Click Readme.md, it should be updated.
+![Github-push](./images/fr0101-09_Github-push.png "Github-push") 
 
-![GitHub-updated-readme](./images/fr0101-14_GitHub-updated-readme.png "GitHub-updated-readme")
+- Click on the checkmark above the Message textbox and enter "Updated Readme.md"
 
-6. Modify Readme.md in Github by adding these lines:
-    ```
-    3. I updated it in GitHub.
+![Github-push](./images/fr0101-09_Github-push.png "Github-push") 
 
-    4. I pulled it to my local repo using VScode
-    ``` 
-    then Commit the change.
+- Click the Synchronize icon o the left bottom of the VSCode window. You will be asked to login with your GitHub credentials.
 
-7. In VSCode, From the Source Control menu, click the three dots (...) More menu, and click Pull. 
+![Github-push](./images/fr0101-09_Github-push.png "Github-push") 
 
-![VSCode-pull](./images/fr0101-15_VSCode-pull.png "VSCode-pull")
+- Login to GitHub and select the myProject repository then click Readme.md, it should be updated.
 
-8. The Github changes will now appear in the Readme.md file.
+![Github-push](./images/fr0101-09_Github-push.png "Github-push")
+ 
+- Modify Readme.md in Github by adding these lines:
+```
+3. I updated it in GitHub.
 
-![VSCode-updated-readme](./images/fr0101-16_VSCode-updated-readme.png "VSCode-updated-readme")
+4. I pulled it to my local repo using VScode
+``` 
+
+![Github-push](./images/fr0101-09_Github-push.png "Github-push") 
+
+- Commit the change.
+
+![Github-push](./images/fr0101-09_Github-push.png "Github-push") 
+
+- In VSCode, From the Source Control menu, click the three dots (...) More menu, and click Pull. 
+
+![Github-push](./images/fr0101-09_Github-push.png "Github-push") 
+
+- The Github changes will now appear in the Readme.md file.
+
+![Github-push](./images/fr0101-09_Github-push.png "Github-push") 
+
 ###    10. Install Node for Windows
 1. Browse to: nodejs.org/en/downloads
 2. Install using all the defaults.
