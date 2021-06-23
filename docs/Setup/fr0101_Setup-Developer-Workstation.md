@@ -9,14 +9,24 @@ The following steps create the development environment on your workstation for d
 
 ![Windows-Update](./images/fr0101-01_Windows-Update.png "Windows-Update")
 
-###    2. Create two folders at C:\
+###    2. Create folders 
+
+-  C:\
+
 ```
  'repos' (local copies of your gitHub repos)
  'remotes' (local copies of remote server files)
 ```
 
-
 ![Create-folders](./images/fr0101-02_Create-folders.png "Create-folders")
+
+-  C:\users\(username)\
+
+```
+ '.ssh' (holds your ssh keys)
+```
+
+![Create-folders2](./images/fr0101-02_Create-folders2.png "Create-folders2")
 
 ###    3. Install or open Chrome browser
 
@@ -52,7 +62,21 @@ chrome://extensions/
 
 ![Chrome-extensions4](./images/fr0101-03_Chrome-extensions4.png "Chrome-extensions4")
 
-###    4. Create an account or sign into GitHub
+###    4. Create an account or sign into GitHub with ssh key
+
+- Create new ssh key
+
+```
+ssh-keygen -t rsa -N ""  -f "c:/Users/local_admin/.ssh/bruce.troutman@github_bruce_v210623_key" -C "bruce.troutman@github_bruce_v210623"
+```
+
+![Create New ssh key](./images/fr0101-04_Create-New-ssh-key.png "Create New ssh key")
+
+- Add ssh key to your github account
+
+![Add New ssh key](./images/fr0101-04_Add-New-ssh-key.png "Add New ssh key")
+
+
 - Create a new repository: 'myProject'. 
 
 ![Create New Repository](./images/fr0101-04_Create-New-Repository.png "Create New Repository")
@@ -239,11 +263,11 @@ Using Notepad, edit:
 
 ![Github-push](./images/fr0101-09_Github-push.png "Github-push") 
 
-- Click on the checkmark above the Message textbox and enter "Updated Readme.md"
+- Click on the Commit checkmark above the Message textbox
 
 ![Github-push](./images/fr0101-09_Github-push.png "Github-push") 
 
-- Click the Synchronize icon o the left bottom of the VSCode window. You will be asked to login with your GitHub credentials.
+-  From the Source Control menu, click the three dots (...) More menu, and click Push.
 
 ![Github-push](./images/fr0101-09_Github-push.png "Github-push") 
 
