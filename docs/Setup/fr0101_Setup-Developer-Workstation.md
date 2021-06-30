@@ -9,7 +9,7 @@ The following steps create the development environment on your workstation for d
 
 ![Windows-Update](./images/fr0101-01_Windows-Update.png "Windows-Update")
 
-###    2. Create folders 
+###    2. Create folders and ssh keys
 
 -  C:\
 
