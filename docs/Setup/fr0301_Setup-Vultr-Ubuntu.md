@@ -25,8 +25,7 @@
 ![Vultr Server Size](./images/fr0301-05_Vultr-Server-Size.png "Server Size")
 
 - Add SSH Key
-    + Select an existing key, or
-    + Use **ssh-keygen** to create your public key and paste it into the vultr form.
+    + Select an existing key ssh-keygen
 
 ![Vultr-Add SSH keyTest](./images/fr0301-06_Vultr-add-SSH-key-pasted.png "Pasted Key")
 

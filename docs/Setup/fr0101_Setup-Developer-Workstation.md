@@ -9,7 +9,7 @@ The following steps create the development environment on your workstation for d
 
 ![Windows-Update](./images/fr0101-01_Windows-Update.png "Windows-Update")
 
-###    2. Create folders and ssh keys
+###    2. Create 3 folders and 3 ssh keys
 
 -  C:\
 
@@ -20,13 +20,79 @@ The following steps create the development environment on your workstation for d
 
 ![Create-folders](./images/fr0101-02_Create-folders.png "Create-folders")
 
--  C:\users\(username)\
+-  C:\users\(username)\.ssh
 
 ```
  '.ssh' (holds your ssh keys)
 ```
 
 ![Create-folders2](./images/fr0101-02_Create-folders2.png "Create-folders2")
+
+- Test if OpenSSH client is installed.
+
+```
+From command prompt run ssh.
+```
+
+- OpenSSH client Not installed
+
+![OpenSSH-not-installed](./images/fr0101-02_OpenSSH-not-installed.png "OpenSSH-not-installed")
+
+- Install OpenSSH in Apps & Features - Optional Features
+
+![Install-OpenSSH1](./images/fr0101-02_Install-OpenSSH1.png "Install-OpenSSH1")
+
+![Install-OpenSSH2](./images/fr0101-02_Install-OpenSSH2.png "Install-OpenSSH2")
+
+![Install-OpenSSH3](./images/fr0101-02_Install-OpenSSH3.png "Install-OpenSSH3")
+
+- OpenSSH client is installed
+
+![OpenSSH-is-installed](./images/fr0101-02_OpenSSH-is-installed.png "OpenSSH-is-installed")
+
+
+- Create 3 ssh keys. These keys will be used in several places in the FormR strategy.
+
+```
+Format:
+
+ssh-keygen -t rsa -f 
+"<local user folder>/.ssh/
+<key owner name>@<host name>_<host user name>_v<date>_key"
+-C "<key owner name>@<host name>_<host user name>_v<date>"
+```
+
+- Note: Hit the enter key when asked for a Passphrase.
+
+
+```
+1. Key pairs for Github:
+
+ssh-keygen -t rsa -f "c:/Users/local_admin/.ssh/bruce.troutman@github_btg_v210713_key" -C "bruce.troutman@github_btg_v210713"
+```
+
+![Create New ssh key1](./images/fr0101-03_Create-New-ssh-key1.png "Create New ssh key1")
+
+```
+2. Key pairs for Cloud Provider:
+
+ssh-keygen -t rsa -f "c:/Users/local_admin/.ssh/bruce.troutman@Vultr_btg_v210713_key" -C "bruce.troutman@Vultr_btg_v210713"
+```
+
+![Create New ssh key2](./images/fr0101-03_Create-New-ssh-key2.png "Create New ssh key2")
+
+```
+3. Key pairs for access to Remote Server on Cloud Provider:
+
+ssh-keygen -t rsa -f "c:/Users/local_admin/.ssh/bruce.troutman@Formr1-Vultr_nimda_v210713_key" -C "bruce.troutman@Formr1-Vultr_nimda_v210713"
+```
+
+![Create New ssh key3](./images/fr0101-03_Create-New-ssh-key3.png "Create New ssh key3")
+
+- View created key files:
+
+![Create New ssh key4](./images/fr0101-03_Create-New-ssh-key4.png "Create New ssh key4")
+
 
 ###    3. Install or open Chrome browser
 
@@ -64,15 +130,7 @@ chrome://extensions/
 
 ###    4. Create an account or sign into GitHub with ssh key
 
-- Create new ssh key
-
-```
-ssh-keygen -t rsa -N ""  -f "c:/Users/local_admin/.ssh/bruce.troutman@github_bruce_v210623_key" -C "bruce.troutman@github_bruce_v210623"
-```
-
-![Create New ssh key](./images/fr0101-04_Create-New-ssh-key.png "Create New ssh key")
-
-- Add ssh key to your github account
+- Add your Github ssh key from your .ssh folder to your github account
 
 ![Add New ssh key](./images/fr0101-04_Add-New-ssh-key.png "Add New ssh key")
 
