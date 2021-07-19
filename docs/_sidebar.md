@@ -1,11 +1,11 @@
 
 <h>1. Remote Server Setup</h>
  - [Vultr-Ubuntu](/Setup/fr0301_Setup-Vultr-Ubuntu.md)
- - [Hardening Ubuntu](/setup/fr0302_Setup-Hardening-Ubuntu.md)
- - [Web Server](/setup/fr0303_Setup-Web-Server-Ubuntu.md)
- - [App Server](/setup/fr0304_Setup-App-Server-Ubuntu.md)
- - [Data Server](/setup/fr0305_Setup-Data-Server-Ubuntu.md)
- - [Website SSL](/setup/fr0306_Setup-Website-SSL-Ubuntu.md)
+ - [Hardening Ubuntu](/Setup/fr0302_Setup-Hardening-Ubuntu.md)
+ - [Web Server](/Setup/fr0303_Setup-Web-Server-Ubuntu.md)
+ - [App Server](/Setup/fr0304_Setup-App-Server-Ubuntu.md)
+ - [Data Server](/Setup/fr0305_Setup-Data-Server-Ubuntu.md)
+ - [Website SSL](/Setup/fr0306_Setup-Website-SSL-Ubuntu.md)
 
 <h>2. FormR2 Samples</h>
 - [Course 2.1](/FormR1/fr02.1_Course-2.1/_home.md)
