@@ -9,7 +9,7 @@ The following steps create the development environment on your workstation for d
 
 ![Windows-Update](./images/fr0101-01_Windows-Update.png "Windows-Update")
 
-###    2. Create 3 folders and 3 ssh keys
+###    2. Create 3 folders and setup ssh and create keys
 
 -  C:\
 
@@ -68,7 +68,7 @@ ssh-keygen -t rsa -f
 ```
 1. Key pairs for Github:
 
-ssh-keygen -t rsa -f "c:/Users/local_admin/.ssh/bruce.troutman@github_btg_v210713_key" -C "bruce.troutman@github_btg_v210713"
+ssh-keygen -t rsa -P '' -g -f "c:/Users/local_admin/.ssh/bruce.troutman@github_btg_v210713_key" -C "bruce.troutman@github_btg_v210713"
 ```
 
 ![Create New ssh key1](./images/fr0101-03_Create-New-ssh-key1.png "Create New ssh key1")
@@ -76,7 +76,7 @@ ssh-keygen -t rsa -f "c:/Users/local_admin/.ssh/bruce.troutman@github_btg_v21071
 ```
 2. Key pairs for Cloud Provider:
 
-ssh-keygen -t rsa -f "c:/Users/local_admin/.ssh/bruce.troutman@Vultr_btg_v210713_key" -C "bruce.troutman@Vultr_btg_v210713"
+ssh-keygen -t rsa -P '' -g -f "c:/Users/local_admin/.ssh/bruce.troutman@Vultr_btg_v210713_key" -C "bruce.troutman@Vultr_btg_v210713"
 ```
 
 ![Create New ssh key2](./images/fr0101-03_Create-New-ssh-key2.png "Create New ssh key2")
@@ -84,7 +84,7 @@ ssh-keygen -t rsa -f "c:/Users/local_admin/.ssh/bruce.troutman@Vultr_btg_v210713
 ```
 3. Key pairs for access to Remote Server on Cloud Provider:
 
-ssh-keygen -t rsa -f "c:/Users/local_admin/.ssh/bruce.troutman@Formr1-Vultr_nimda_v210713_key" -C "bruce.troutman@Formr1-Vultr_nimda_v210713"
+ssh-keygen -t rsa -P '' -g -f "c:/Users/local_admin/.ssh/bruce.troutman@Formr1-Vultr_nimda_v210713_key" -C "bruce.troutman@Formr1-Vultr_nimda_v210713"
 ```
 
 ![Create New ssh key3](./images/fr0101-03_Create-New-ssh-key3.png "Create New ssh key3")
@@ -93,6 +93,23 @@ ssh-keygen -t rsa -f "c:/Users/local_admin/.ssh/bruce.troutman@Formr1-Vultr_nimd
 
 ![Create New ssh key4](./images/fr0101-03_Create-New-ssh-key4.png "Create New ssh key4")
 
+- Create Host for github connection in .ssh/config. Open or create .ssh/config and add the following:
+
+```
+Host github-btg
+HostName       github.com
+IdentityFile   C:/Users/Local_Admin/.ssh/bruce.troutman@github_btg_v210713_key
+User           git
+```
+
+![Add Host to config](./images/fr0101-03_Add-host-to-config.png "Add Host to config")
+
+- From the DOS command window, navigate to the repos folder and enter:
+
+    - Test the connection to github.
+```
+ssh github-btg
+```
 
 ###    3. Install or open Chrome browser
 
