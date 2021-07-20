@@ -3,7 +3,7 @@
 
 ?> If you don't see any side-bar, you can unhide it (and hide it again) with the 'burger' button.
 
-![hamburger.png](images/fr300-01_Hamburger.jpg)
+![hamburger.png](assets/fr300-01_Hamburger.jpg)
 <br>
 
 ## Questions, answers, and feedback (Please)

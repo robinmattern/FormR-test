@@ -1,153 +1,152 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 
 <div id="app">Please wait...</div>
 
 <head>
-	<!-- do I really want google fonts? -->
-	     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Lato|Roboto+Slab&display=swap" rel="stylesheet">
-	<!-- <link rel="icon" href="assets/favicon.ico" type="image/x-icon"/> -->
-	<!-- <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png"> -->
-	     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
-	     <meta charset="utf-8">
-	     <meta name="description" content="IMADE3D Awesome (Plaintext) Docs">
-	     <title>FormR Awesome Docs</title>
+    <!-- do I really want google fonts? -->
+         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Lato|Roboto+Slab&display=swap" rel="stylesheet">
+    <!-- <link rel="icon" href="assets/favicon.ico" type="image/x-icon"/> -->
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png"> -->
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+         <meta charset="utf-8">
+         <meta name="description" content="IMADE3D Awesome (Plaintext) Docs">
+         <title>FormR Awesome Docs</title>
 
-	<!-- ****** faviconit.com favicons ****** -->
-	     <link rel="icon" href="assets/favicon/favicon-32.png?v=2" />
+    <!-- ****** faviconit.com favicons ****** -->
+         <link rel="icon" href="assets/favicon/favicon-32.png?v=2" />
 
-	<!-- ****** faviconit.com favicons ****** -->
+    <!-- ****** faviconit.com favicons ****** -->
 
-	<!-- 1. Theme -->
-	     <link rel="stylesheet" href="https://unpkg.com/docsify-themeable/dist/css/theme-simple.css">
-	<!-- <link rel="stylesheet" href="https://unpkg.com/docsify-themeable/dist/css/theme-simple-dark.css"> -->
-	<!-- <link rel="stylesheet" href="https://unpkg.com/docsify-themeable/dist/css/theme-defaults.css"> -->
+    <!-- 1. Theme -->
+         <link rel="stylesheet" href="https://unpkg.com/docsify-themeable/dist/css/theme-simple.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/docsify-themeable/dist/css/theme-simple-dark.css"> -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/docsify-themeable/dist/css/theme-defaults.css"> -->
 
-	<!-- 2. PrismJS Themes -->
-	<!-- <link rel="stylesheet" href="https://unpkg.com/prism-github/prism-github.css"> -->
-	<!-- <link rel="stylesheet" href="https://unpkg.com/prism-theme-one-dark/prism-onedark.css"> -->
+    <!-- 2. PrismJS Themes -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/prism-github/prism-github.css"> -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/prism-theme-one-dark/prism-onedark.css"> -->
 
-	<!-- 3. Custom Theme Properties -->
-	<!-- Custom theme stylesheet -->
-	     <link rel="stylesheet" href="theme-custom.css">
+    <!-- 3. Custom Theme Properties -->
+    <!-- Custom theme stylesheet -->
+         <link rel="stylesheet" href="theme-custom.css">
 </head>
 
 <body>
-	<div id="app"></div>
+    <div id="app"></div>
 
-	<script>
- // 4. Docsify Configuration
-		window.$docsify = {
-			name       : 'FormR Awesome Docs',
- 	 // repo       : 'https://github.com/formr/awesome-docs',
-	 // coverpage  : 'coverpage.md',
-			homepage   : '_home.md',
-	 // homepage   : 'https://raw.githubusercontent.com/jhildenbiddle/docsify-themeable/master/README.md',
-			loadSidebar:  true,
-	 // autoHeader:   true,
-			auto2top   :  true,
-			maxLevel   :  3,
-			subMaxLevel:  3,
-			loadNavbar :  true,
-			mergeNavbar:  true,
-			formatUpdated: '{MM}/{DD}/{YYYY}',
-	 // logo: 'assets/imade3d_logo_icon_12_px.png',
+    <script>
 
- 	 // 5. docsify-themeable
-			themeable : {
-				readyTransition : true,
-				responsiveTables: true
-			  },
+     // 4. Docsify Configuration
 
-			noCompileLinks: [
-				'/foo',
-				'/bar/.*'
-			   ],
+        window.$docsify  = {
+            name         : 'FormR Awesome Docs',
+     //     repo         : 'https://github.com/formr/awesome-docs',
+     //     coverpage    : 'coverpage.md',
+            homepage     : '_home.md',
+     //     homepage     : 'https://raw.githubusercontent.com/jhildenbiddle/docsify-themeable/master/README.md',
+            loadSidebar  :  true,
+     //     autoHeader   :  true,
+            auto2top     :  true,
+            maxLevel     :  3,
+            subMaxLevel  :  3,
+            loadNavbar   :  true,
+            mergeNavbar  :  true,
+            formatUpdated: '{MM}/{DD}/{YYYY}',
+     //     logo         : 'assets/imade3d_logo_icon_12_px.png',
 
-			// search things
-			search: {
-				maxAge: 10000, // Expiration time, milliseconds, 10s now.
-				paths: 'auto', // or 'auto' or []
-				placeholder: 'Type to search',
-				hideOtherSidebarContent: false, // whether or not to hide other sidebar content
-			},
+     // 5. docsify-themeable
+            themeable : {
+                readyTransition : true,
+                responsiveTables: true
+                },
 
-			//tabs
-			tabs: {
-				persist    :  true,      // default
-				sync       :  true,      // default
-				theme      : 'classic',  // default
-				tabComments:  false,     // default
-				tabHeadings:  true       // default
-			  },
+            noCompileLinks: [
+                '/foo',
+                '/bar/.*'
+                 ],
 
-			// Relative path enabled
-			//// this one changes a lot of things. https://docsify.js.org/#/configuration?id=relativepath
-//	  relativePath: true,  // i.e. you can never use a folder name in a path
-//	  relativePath: false  // i.e. you must always use a full path name
-			relativePath: true,
+            // search things
+            search: {
+                maxAge: 10000, // Expiration time, milliseconds, 10s now.
+                paths: 'auto', // or 'auto' or []
+                placeholder: 'Type to search',
+                hideOtherSidebarContent: false, // whether or not to hide other sidebar content
+                },
 
-			// aliases
-			// https://docsify.js.org/#/configuration?id=alias
-			alias: {
-				// '/.*/_navbar.md': '/_navbar.md', // See #301
-				// '(.+(?<!\/)$)': '$1/' // NOT WORKING eg. */octoprint would go to */octoprint/
-				// '(.*)/Your-First-Print/(.*)': '$1/Calibrate-the-1st-Layer-Height/Your-First-Print/$2'
-				// '/.*/_sidebar.md': '/_sidebar.md' // See #301
-				// '/zh-cn/changelog': '/changelog'
-				// '/foo/(+*)': '/bar/$1', // supports regexp
-				// '/changelog':
-				// 'https://raw.githubusercontent.com/docsifyjs/docsify/master/CHANGELOG',
-			  },
+            //tabs
+            tabs: {
+                persist    :  true,      // default
+                sync       :  true,      // default
+                theme      : 'classic',  // default
+                tabComments:  false,     // default
+                tabHeadings:  true       // default
+                },
 
-			// plugins
-			plugins: 
+         // Relative path enabled
+       //// this one changes a lot of things. https://docsify.js.org/#/configuration?id=relativepath
+//          relativePath: true,  // i.e. you can never use a folder name in a path
+//          relativePath: false  // i.e. you must always use a full path name
+            relativePath: true,
 
-		[ function (hook, vm) {
+         // aliases, see https://docsify.js.org/#/configuration?id=alias
+            alias: {
+                // '/.*/_navbar.md': '/_navbar.md', // See #301
+                // '(.+(?<!\/)$)': '$1/' // NOT WORKING eg. */octoprint would go to */octoprint/
+                // '(.*)/Your-First-Print/(.*)': '$1/Calibrate-the-1st-Layer-Height/Your-First-Print/$2'
+                // '/.*/_sidebar.md': '/_sidebar.md' // See #301
+                // '/zh-cn/changelog': '/changelog'
+                // '/foo/(+*)': '/bar/$1', // supports regexp
+                // '/changelog':
+                // 'https://raw.githubusercontent.com/docsifyjs/docsify/master/CHANGELOG',
+                }
 
-				hook.beforeEach(function (html) {
+         // plugins
+          , plugins: [ function ( hook, vm ) {
 
-				  var url           = 'https://github.com/IMADE3D/awesome-docs/tree/master/docs/' + vm.route.file
-				  var delimiter     = '<span>∴∴∴\n\n</span>'
-				  var footer        = '<span>Built with docsify by &copy; <a href="https://www.formr.net">www.formr.net</a>\n</span>'
-				  var lastModified  = '<span class="last-modified">Last modified {docsify-updated} \n</span>'
-				  var editButton    = '<a class="edit-button" href="' + url +'" target="_blank">Edit this file on GitHub</a>\n'
-				  var metaContainer = '<div class="meta-container">' + delimiter + footer + lastModified + editButton + '</div>\n'
+                hook.beforeEach( function( html ) {
 
- 			 return html
-					  + metaContainer
-			 	 // + '\n----\n'
-				 // + footer.join('')
-				      } )
-      		}
-			  ]
+                  var url           = 'https://github.com/IMADE3D/awesome-docs/tree/master/docs/' + vm.route.file
+                  var delimiter     = '<span>???\n\n</span>'
+                  var footer        = '<span>Built with docsify by &copy; <a href="https://www.formr.net">www.formr.net</a>\n</span>'
+                  var lastModified  = '<span class="last-modified">Last modified {docsify-updated} \n</span>'
+                  var editButton    = '<a class="edit-button" href="' + url +'" target="_blank">Edit this file on GitHub</a>\n'
+                  var metaContainer = '<div class="meta-container">' + delimiter + footer + lastModified + editButton + '</div>\n'
 
-		,	pagination: {
-				crossChapter: true
-  			}
-	};
-	</script>
+               return html
+                    + metaContainer
+                 // + '\n----\n'
+                 // + footer.join('')
+                      } )
+                  } ]
 
-	<!-- Required: docsify + docsify-themeable -->
-	     <script src="https://unpkg.com/docsify/lib/docsify.min.js"></script>
-	     <script src="https://unpkg.com/docsify-themeable"></script>
+          , pagination: {
+                crossChapter: true
+            }
+        };
 
-	<!-- 6. Docsify Plugins -->
-	     <script src="https://unpkg.com/docsify/lib/plugins/search.js"></script>
-	<!-- <script src="https://unpkg.com/docsify-copy-code"></script> -->
-	     <script src="https://unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
-	     <script src="https://unpkg.com/docsify/lib/plugins/zoom-image.min.js"></script>
-	     <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
-	<!-- <script src="//unpkg.com/docsify-edit-on-github/index.js"></script> -->
+    </script>
 
-	<!-- gitter -->
-	<script>
-		((window.gitter = {}).chat = {}).options = {
-		  room: 'yesimade3d/awesome-docs'
-		};
-	</script>
-	<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+    <!-- Required: docsify + docsify-themeable -->
+         <script src="https://unpkg.com/docsify/lib/docsify.min.js"></script>
+         <script src="https://unpkg.com/docsify-themeable"></script>
+
+    <!-- 6. Docsify Plugins -->
+         <script src="https://unpkg.com/docsify/lib/plugins/search.js"></script>
+    <!-- <script src="https://unpkg.com/docsify-copy-code"></script> -->
+         <script src="https://unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+         <script src="https://unpkg.com/docsify/lib/plugins/zoom-image.min.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+    <!-- <script src="//unpkg.com/docsify-edit-on-github/index.js"></script> -->
+
+    <!-- gitter -->
+    <script>
+        ((window.gitter = {}).chat = {}).options = {
+          room: 'yesimade3d/awesome-docs'
+        };
+    </script>
+    <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
 
 </body>
 
