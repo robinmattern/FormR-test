@@ -95,4 +95,4 @@ Use label: FormR-Installed-App-Server
 
 ### Next Step - Install Database Server: 
 
-## [Install Database Server](../setup/fr0305_Setup-Data-Server-Ubuntu.md)
+## [Install Database Server](../Setup/fr0305_Setup-Data-Server-Ubuntu.md)

@@ -74,4 +74,4 @@ Use label: FormR-Installed-Web-Server
 
 ### Next Step - Install Application Server: 
 
-## [Install App Server](../setup/fr0304_Setup-App-Server-Ubuntu.md)
+## [Install App Server](../Setup/fr0304_Setup-App-Server-Ubuntu.md)

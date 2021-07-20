@@ -118,4 +118,4 @@ mysql xxx.xxx.xxx.xxx:3306 JS> \quit
 
 ### Next Step - Create Website with SSL on your server: 
 
-## [Create Website with SSL](../setup/fr0306_Setup-Website-SSL-Ubuntu.md)
+## [Create Website with SSL](../Setup/fr0306_Setup-Website-SSL-Ubuntu.md)
