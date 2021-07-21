@@ -1,7 +1,7 @@
 
 # Instructions for creating an Ubuntu server on Vultr
 
-1. Create New Ubuntu Instance
+### 1. Create New Ubuntu Instance
 - Signin or create an account on vultr.com
 
 - Deploy New Server 
@@ -39,7 +39,7 @@
 
 ![Vultr Installing](./images/fr0301-08_Vultr-Installing.png "Installing")
 
-2. Open Vultr VM Console to Log in
+### 2. Open Vultr VM Console to Log in
 
 - Click on Products, then the Server Name i.e. FormRx-Vultr
 

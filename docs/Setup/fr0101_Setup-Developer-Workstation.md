@@ -31,7 +31,7 @@ The following steps create the development environment on your workstation for d
 - Test if OpenSSH client is installed.
 
 ```
-From command prompt run ssh.
+From DOS command prompt run ssh.
 ```
 
 - OpenSSH client Not installed
@@ -51,19 +51,16 @@ From command prompt run ssh.
 ![OpenSSH-is-installed](./images/fr0101-02_OpenSSH-is-installed.png "OpenSSH-is-installed")
 
 
-- Create 3 ssh keys. These keys will be used in several places in the FormR strategy.
+- Create 3 ssh keys. These keys will be used for GitHub, your Cloud Provider and your Remote server. Run from 
 
 ```
 Format:
 
-ssh-keygen -t rsa -f 
+ssh-keygen -t rsa -P '' -g -f 
 "<local user folder>/.ssh/
 <key owner name>@<host name>_<host user name>_v<date>_key"
 -C "<key owner name>@<host name>_<host user name>_v<date>"
 ```
-
-- Note: Hit the enter key when asked for a Passphrase.
-
 
 ```
 1. Key pairs for Github:
@@ -93,23 +90,6 @@ ssh-keygen -t rsa -P '' -g -f "c:/Users/local_admin/.ssh/bruce.troutman@Formr1-V
 
 ![Create New ssh key4](./images/fr0101-03_Create-New-ssh-key4.png "Create New ssh key4")
 
-- Create Host for github connection in .ssh/config. Open or create .ssh/config and add the following:
-
-```
-Host github-btg
-HostName       github.com
-IdentityFile   C:/Users/Local_Admin/.ssh/bruce.troutman@github_btg_v210713_key
-User           git
-```
-
-![Add Host to config](./images/fr0101-03_Add-host-to-config.png "Add Host to config")
-
-- From the DOS command window, navigate to the repos folder and enter:
-
-    - Test the connection to github.
-```
-ssh github-btg
-```
 
 ###    3. Install or open Chrome browser
 
@@ -145,7 +125,7 @@ chrome://extensions/
 
 ![Chrome-extensions4](./images/fr0101-03_Chrome-extensions4.png "Chrome-extensions4")
 
-###    4. Create an account or sign into GitHub with ssh key
+###    4. Create an account or sign into GitHub then Add your ssh key.
 
 - Add your Github ssh key from your .ssh folder to your github account
 
@@ -177,29 +157,27 @@ chrome://extensions/
 
 ![GitHub-myProject-readme4](./images/fr0101-04_GitHub-myProject-readme4.png "GitHub-myProject-readme4")
 
-###    5. Install GitHub Desktop and Clone myProject
+###    5. Configure ssh Access to Github
 
-- Follow the instructions at: https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/installing-github-desktop
+- Create Host for github connection in the .ssh/config file. Open or create .ssh/config and add the following:
 
-![GitHub-desktop](./images/fr0101-05_GitHub-desktop.png "GitHub-desktop")
+```
+Host github-btg
+    HostName       github.com
+    IdentityFile   C:/Users/Local_Admin/.ssh/bruce.troutman@github_btg_v210713_key
+    User           git
+```
 
-- Login to your GitHub account        
+![Add Host to config](./images/fr0101-03_Add-host-to-config.png "Add Host to config")
 
-![GitHub-Signin](./images/fr0101-05_GitHub-signin.png "GitHub-signin")
+- From the DOS command window, navigate to the repos folder and enter:
 
-- From Let's get started select Clone a repository
+    - Test the connection to github.
+```
+ssh github-btg
+```
 
-- Select your myProjects repo
-
-- Set the local path to your Repos folder from Step 2 above
-
-- Click Clone
-
-![GitHub-clone](./images/fr0101-05_GitHub-clone.png "GitHub-clone")
-
-- Validate that the cloning was successful
-
-![GitHub-validate-clone](./images/fr0101-05_GitHub-validate-clone.png "GitHub-validate-clone")
+![Test ssh to github](./images/fr0101-03_Test-ssh-to-github.png "Test ssh to github")
 
 ###    6. Download Git, if not already installed
 
@@ -257,21 +235,7 @@ chrome://extensions/
 
 ![VSCode7](./images/fr0101-07_VSCode7.png "VSCode7")
 
-- Click File.. Open folder : repos/myproject
 
-![VSCode8](./images/fr0101-07_VSCode8.png "VSCode8")
-
-![VSCode8a](./images/fr0101-07_VSCode8a.png "VSCode8a")
-
-![VSCode8b](./images/fr0101-07_VSCode8b.png "VSCode8b")
-
-- Click File.. Save Workspace as: myProject.code.workspace
-
-![VSCode9](./images/fr0101-07_VSCode9.png "VSCode9")
-
-![VSCode9a](./images/fr0101-07_VSCode9a.png "VSCode9a")
-
-- Close VSCode
 
 - From File Explorer click on repos/myproject/myProject.code-workspace. VSCode will open to your local myProject code
 
@@ -300,6 +264,31 @@ Using Notepad, edit:
 ![VSCode11b](./images/fr0101-07_VSCode11b.png "VSCode11b")
 
 ![VSCode11c](./images/fr0101-07_VSCode11c.png "VSCode11c")
+
+
+###    8. Clone myProject
+
+- Git bash git clone etc
+
+- Close VSCode
+
+- Validate that the cloning was successful
+
+![GitHub-validate-clone](./images/fr0101-05_GitHub-validate-clone.png "GitHub-validate-clone")
+
+- Click File.. Open folder : repos/myproject
+
+![VSCode8](./images/fr0101-07_VSCode8.png "VSCode8")
+
+![VSCode8a](./images/fr0101-07_VSCode8a.png "VSCode8a")
+
+![VSCode8b](./images/fr0101-07_VSCode8b.png "VSCode8b")
+
+- Click File.. Save Workspace as: myProject.code.workspace
+
+![VSCode9](./images/fr0101-07_VSCode9.png "VSCode9")
+
+![VSCode9a](./images/fr0101-07_VSCode9a.png "VSCode9a")
 
 
 ###    8. Markdown Preview test
