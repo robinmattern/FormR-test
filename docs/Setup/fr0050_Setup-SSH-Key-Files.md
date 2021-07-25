@@ -1,7 +1,7 @@
 
 
 <a class="page-back disabled">BACK</a>
-<a class="page-next" href="#/Setup/fr0101_Setup-Developer-Workstation.md">NEXT - Setup Developer Workspace</a>  
+<a class="page-next" href="Setup/fr0101_Setup-Developer-Workstation.md">NEXT - Setup Developer Workspace</a>  
 <br>
 
 ## 4 Uses of SSH Keys   
