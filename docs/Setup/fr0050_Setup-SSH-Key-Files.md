@@ -1,10 +1,12 @@
 
-# SSH Keys
 
-<!-- ---------------------------------------------------------------------------- -->
+<a class="page-back disabled">BACK</a>
+<a class="page-next" href="/#/Setup/fr0101_Setup-Developer-Workstation.md">NEXT - Setup Developer Workspace</a>  
+<br>
 
-### <u>SSH Key for One Remote Ubuntu Server</u>
+## 4 Uses of SSH Keys   
 
+### 1. A Remote Linux Server  
 
 1. Make a Private and Public Key pair of files
 
@@ -86,7 +88,7 @@
 
 <!-- ---------------------------------------------------------------------------- -->
 
-### <u>SSH Key for All Repositories in your GitHub Account</u>
+### 2. Your GitHub Account
 
 1. Make a Private and Public Key pair of files
 
@@ -159,7 +161,7 @@
 
 <!-- ---------------------------------------------------------------------------- -->
 
-### <u>SSH Key for One Repo in a Partner's GitHub Account</u>
+### 3. A Partner's GitHub Account
 
 1. Make a Private and Public Key pair of files
 
@@ -230,7 +232,7 @@
 
 <!-- ---------------------------------------------------------------------------- -->
 
-### <u>SSH Key for New Repo in a Remote Server</u>
+### 4. A Partner's Github Repository
 
 1. Log into Server with the SSH Key
 
@@ -289,5 +291,7 @@
        cd formr1
 
 
+<a class="page-back disabled">BACK</a>
+<a class="page-next" href="/#/Setup/fr0101_Setup-Developer-Workstation.md">NEXT - Setup Developer Workspace</a>
 
 

@@ -1,4 +1,7 @@
-# Setup Instructions for creating a simple website with SSL
+
+<a class="page-back" href="/#/Setup/fr0305_Setup-Data-Server-Ubuntu.md">BACK - Install Database Server</a>
+<a class="page-next disabled">NEXT</a>
+## Setup Instructions for creating a simple website with SSL
 
 1. Use Bitvise securely. Open Bitvise on your local workstation and login as nimda to the Ubuntu server
 
@@ -225,14 +228,17 @@ https://yoururl
 
 9. Close port 5000
 ```
-ufw status numbered
+   ufw status numbered
 
-ufw delete 8
+   ufw delete 8
 
-ufw delete 4
+   ufw delete 4
 ```
 
 ![BitVise Close Port 5000](./images/fr0306-13_Ubuntu-Bitvise-Close-Port-5000.png "BitVise Close Port 5000")
 
 
-## Congratulations your Ubuntu server is secure and ready for action.  
+<h3> Congratulations your Ubuntu server is secure and ready for action. </h3> 
+
+<a class="page-back" href="/#/Setup/fr0305_Setup-Data-Server-Ubuntu.md">BACK - Install Database Server</a>
+<a class="page-next disabled">NEXT</a>

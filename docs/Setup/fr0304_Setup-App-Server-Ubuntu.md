@@ -1,6 +1,9 @@
-# Setup Instructions for application server, NodeJS, on Ubuntu
+<a class="page-back" href="/#/Setup/fr0303_Setup-Web-Server-Ubuntu.md" >BACK - Install Web Server</a>
+<a class="page-next" href="/#/Setup/fr0305_Setup-Data-Server-Ubuntu"   >Install Database Server - NEXT</a>
 
-## Login as root to the Ubuntu server on your Vultr console
+## Setup Instructions for application server, NodeJS, on Ubuntu
+
+ - Login as root to the Ubuntu server on your Vultr console
 
 ### 1. Install nodejs
 
@@ -92,7 +95,10 @@ Use label: FormR-Installed-App-Server
 
 ![Take Snapshot](./images/fr0304-12_Ubuntu-take-snapshot.png "Take Snapshot")
 
-
+<!--
 ### Next Step - Install Database Server: 
-
 ## [Install Database Server](../Setup/fr0305_Setup-Data-Server-Ubuntu.md)
+-->
+
+<a class="page-back" href="/#/Setup/fr0303_Setup-Web-Server-Ubuntu.md" >BACK - Install Web Server</a>
+<a class="page-next" href="/#/Setup/fr0305_Setup-Data-Server-Ubuntu"   >Install Database Server - NEXT</a>

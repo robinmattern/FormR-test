@@ -1,5 +1,7 @@
+<a class="page-back" href="/#/Setup/fr0103_Clone-FormR.md">BACK - Clone FormR</a>
+<a class="page-next" href="/#/Setup/fr0302_Setup-Hardening-Ubuntu.md">Harden Ubuntu - NEXT</a>
 
-# Instructions for creating an Ubuntu server on Vultr
+## Instructions for creating an Ubuntu server on Vultr
 
 ### 1. Create New Ubuntu Instance
 - Signin or create an account on vultr.com
@@ -66,7 +68,15 @@
 
 ![Vultr Welcome](./images/fr0301-13_Vultr-Welcome.png "Welcome")
 
-### Next Step - Harden your server: 
+<!--  
+### [BACK - Clone FormR ](/Setup/fr0103_Clone-FormR.md)
+### [NEXT - HardenUbuntu](/Setup/fr0302_Setup-Hardening-Ubuntu.md)
+-->
 
-## [Harden Ubuntu](../Setup/fr0302_Setup-Hardening-Ubuntu.md)
+<a class="page-back" href="/#/Setup/fr0103_Clone-FormR.md">BACK - Clone FormR</a>
+<a class="page-next" href="/#/Setup/fr0302_Setup-Hardening-Ubuntu.md">Harden Ubuntu - NEXT</a>
 
+<!--
+<div class="page-back">### [BACK - Clone FormR ](/Setup/fr0103_Clone-FormR.md)</div>
+<div class="page-next">### [NEXT - HardenUbuntu](/Setup/fr0302_Setup-Hardening-Ubuntu.md)</div>
+-->

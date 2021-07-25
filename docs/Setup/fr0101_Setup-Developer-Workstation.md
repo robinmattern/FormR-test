@@ -1,15 +1,19 @@
 
+<a class="page-back" href="/#/Setup/fr0050_Setup-SSH-Key-Files.md">BACK - Create SSH Keys</a>
+<a class="page-next" href="/#/Setup/fr0102_Simple-Node-Apps.md">Create a Simple NodeJS App - NEXT</a>
+
 ## Instructions for setting up a MERN stack development workstation
 
-- Introduction
+#### Introduction
 The following steps create the development environment on your workstation for developing an MERN stack (MYSql, Express, React and Node) application. You will access a repository on github and modify it, run it and push changes back to github. We will be using an empty 'Windows Pro N' VM in these instructions. You should be able to use any workstation. Just follow the steps. 
+#### Steps to set up your development workstation
+<br> 
 
-## Steps to set up your development workstation
-###    1. Install any updates to your workstation.
+### 1. Install any updates to your workstation.
 
 ![Windows-Update](./images/fr0101-01_Windows-Update.png "Windows-Update")
 
-###    2. Create 3 folders, change View Options and setup ssh and create keys
+### 2. Create 3 folders, change View Options and setup ssh and create keys
 
 -  C:\
 
@@ -520,7 +524,10 @@ code .
 
 ![Textpad-start](./images/fr0101-14_Textpad-start.png "Textpad-start")
 
-## Congratulations! Your Developer Workstation is setup.
+<br/>
+<h3> Congratulations! Your Developer Workstation is setup.</h3>
 
-### After all installations on a new Windows 10 machine 27GB was used on Drive C:.
-    
+ After all installations on a new Windows 10 machine, 27GB was used on Drive C:.
+
+<a class="page-back" href="/#/Setup/fr0050_Setup-SSH-Key-Files.md">BACK - Create SSH Keys</a>
+<a class="page-next" href="/#/Setup/fr0102_Simple-Node-Apps.md">Create a Simple NodeJS App - NEXT</a>

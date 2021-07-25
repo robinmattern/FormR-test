@@ -1,9 +1,14 @@
 
-# Creating Node Applications on the MERN stack development workstation
+<a class="page-back" href="/#/Setup/fr0101_Setup-Developer-Workstation.md">BACK - Setup Developer Workstation</a>
+<a class="page-next" href="/#/Setup/fr0103_Clone-FormR.md">Clone FormR - NEXT</a>
 
-## Introduction
+## Creating Node Applications on the MERN stack development workstation
 
-The following steps create several basic node applications. There is a script, server, client and MySQL testing application. Each has special requirements. We will create a folder structure and install the required packages. Everything will be installed in the repos/myProject folder. All activities will be done in VSCode.
+#### Introduction
+
+The following steps create several basic node applications. There is a script, server, client and MySQL testing application. Each has special requirements. We will create a folder structure and install the required packages. Everything will be installed in the repos/myProject folder. All activities will be done in VSCode.   
+<br>
+
 
 ### 1. Test the Node version.
 
@@ -160,14 +165,15 @@ npm install --save mysql2
 ![Node-install-mysql2](../images/et0102-20_Node-install-mysql2.png "Node-install-mysql2")
 
 2. In the folder server/app01s create a new file, queryDB.js. Enter the following and then changed the password for your MySQL root login.
-```
-//--------------------------------------------------------
-const DB = '' // change to 'practice in Create Table step below.'
-const dialect = 'mysql'
-//--------------------------------------------------------
 
+`//--------------------------------------------------------`
+`const DB = '' // change to 'practice in Create Table step below.'`
+`const dialect = 'mysql'`
+`//--------------------------------------------------------`
+
+```
 const Sequelize = require("sequelize");
-const sequelize = new Sequelize(DB, "root", "<password>", {
+const sequelize = new Sequelize( DB, "root", "<password>", {
   host: "localhost",
   dialect: dialect, 
 });
@@ -197,7 +203,7 @@ const SQLstr = "DROP DATABASE practice"
 //const SQLstr = "UPDATE customers SET address = 'Highway 40' where id = 1"
 
 // 6. Create a Stored Procedure
-//const SQLstr = "CREATE PROCEDURE `sp_getcustomers` () Select id, name,address from customers ;"
+//const SQLstr = "CREATE PROCEDURE 'sp_getcustomers' () Select id, name,address from customers ;"
 
 // 7. Execute a Stored Procedure
 //const SQLstr = "Call sp_getcustomers"
@@ -268,9 +274,9 @@ node queryDB
      2. Add description- Added Node apps
      3. Click the checkmark to Commit
      4. Click the sync icon
+  
 
----  
+<h3> Congratulations! You have run Node applications that test your development environment.</h3>
 
-### Congratulations! You have run Node applications that test your development environment.
-
----
+<a class="page-back" href="/#/Setup/fr0101_Setup-Developer-Workstation.md">BACK - Setup Developer Workstation</a>
+<a class="page-next" href="/#/Setup/fr0103_Clone-FormR.md">Clone FormR - NEXT</a>

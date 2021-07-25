@@ -579,3 +579,28 @@ sp {
     margin-bottom: 10px;
     }
 
+.page-back { 
+    float        : left; 
+    font-weight  : bold;
+    color        : maroon;
+    margin-top   : 15px;
+    margin-bottom: 20px;
+    }
+
+.page-next { 
+    float        : right; 
+    font-weight  : bold;
+    color        : maroon;
+    margin-top   : 15px;
+    margin-bottom: 20px;
+    }
+
+.enabled {
+    color           : #000000 !important;
+    pointer-events  : auto      !important;
+    }
+
+.disabled {
+    color           : #aaaaaa !important;   /* .(10610.01.1 RAM Make it grey to start) */
+    pointer-events  : none      !important;     /* .(10610.01.2 RAM Disable click event) */
+    }

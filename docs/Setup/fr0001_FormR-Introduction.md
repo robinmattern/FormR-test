@@ -63,3 +63,6 @@ Server that can connect to a database server and publish the FormR application.
 
 - Credit is given to many whose tutorials, videos and blogs have provided inspiration, information and insight into these topics. We especially thank  We especially thank BezKoder.com, Ben Awad, Jared Palmer, Jason Watmore, 
 GraspingTech.com , LifeWire.com, SQL-Hub.com, W3Schools.com,
+
+<a class="page-back disabled">BACK</a>
+<a class="page-next" href="/#/Setup/fr0050_Setup-SSH-Key-Files.md">NEXT - SSH Key Files</a>
