@@ -65,4 +65,4 @@ Server that can connect to a database server and publish the FormR application.
 GraspingTech.com , LifeWire.com, SQL-Hub.com, W3Schools.com,
 
 <a class="page-back disabled">BACK</a>
-<a class="page-next" href="/#/Setup/fr0050_Setup-SSH-Key-Files.md">NEXT - SSH Key Files</a>
+<a class="page-next" href="Setup/fr0050_Setup-SSH-Key-Files.md">NEXT - SSH Key Files</a>

@@ -1,5 +1,5 @@
 
-<a class="page-back" href="/#/Setup/fr0305_Setup-Data-Server-Ubuntu.md">BACK - Install Database Server</a>
+<a class="page-back" href="Setup/fr0305_Setup-Data-Server-Ubuntu.md">BACK - Install Database Server</a>
 <a class="page-next disabled">NEXT</a>
 ## Setup Instructions for creating a simple website with SSL
 
@@ -240,5 +240,5 @@ https://yoururl
 
 <h3> Congratulations your Ubuntu server is secure and ready for action. </h3> 
 
-<a class="page-back" href="/#/Setup/fr0305_Setup-Data-Server-Ubuntu.md">BACK - Install Database Server</a>
+<a class="page-back" href="Setup/fr0305_Setup-Data-Server-Ubuntu.md">BACK - Install Database Server</a>
 <a class="page-next disabled">NEXT</a>

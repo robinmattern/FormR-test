@@ -1,5 +1,5 @@
-<a class="page-back" href="/#/Setup/fr0301_Setup-Vultr-Ubuntu.md"      >BACK - Setup-Vultr-Ubuntu</a>
-<a class="page-next" href="/#/Setup/fr0303_Setup-Web-Server-Ubuntu"    >Install Web Server - NEXT</a>
+<a class="page-back" href="Setup/fr0301_Setup-Vultr-Ubuntu.md"      >BACK - Setup-Vultr-Ubuntu</a>
+<a class="page-next" href="Setup/fr0303_Setup-Web-Server-Ubuntu"    >Install Web Server - NEXT</a>
 
 ## Instructions for Hardening the Ubuntu server.
 
@@ -277,6 +277,6 @@ timedatectl
 ## [Install Web Server](../Setup/fr0303_Setup-Web-Server-Ubuntu.md)
 -->
 
-<a class="page-back" href="/#/Setup/fr0301_Setup-Vultr-Ubuntu.md"      >BACK - Setup-Vultr-Ubuntu</a>
-<a class="page-next" href="/#/Setup/fr0303_Setup-Web-Server-Ubuntu"    >Install Web Server - NEXT</a>
+<a class="page-back" href="Setup/fr0301_Setup-Vultr-Ubuntu.md"      >BACK - Setup-Vultr-Ubuntu</a>
+<a class="page-next" href="Setup/fr0303_Setup-Web-Server-Ubuntu"    >Install Web Server - NEXT</a>
 

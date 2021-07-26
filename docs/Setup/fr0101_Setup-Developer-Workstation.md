@@ -1,6 +1,6 @@
 
-<a class="page-back" href="/#/Setup/fr0050_Setup-SSH-Key-Files.md">BACK - Create SSH Keys</a>
-<a class="page-next" href="/#/Setup/fr0102_Simple-Node-Apps.md">Create a Simple NodeJS App - NEXT</a>
+<a class="page-back" href="Setup/fr0050_Setup-SSH-Key-Files.md">BACK - Create SSH Keys</a>
+<a class="page-next" href="Setup/fr0102_Simple-Node-Apps.md">Create a Simple NodeJS App - NEXT</a>
 
 ## Instructions for setting up a MERN stack development workstation
 
@@ -529,5 +529,5 @@ code .
 
  After all installations on a new Windows 10 machine, 27GB was used on Drive C:.
 
-<a class="page-back" href="/#/Setup/fr0050_Setup-SSH-Key-Files.md">BACK - Create SSH Keys</a>
-<a class="page-next" href="/#/Setup/fr0102_Simple-Node-Apps.md">Create a Simple NodeJS App - NEXT</a>
+<a class="page-back" href="Setup/fr0050_Setup-SSH-Key-Files.md">BACK - Create SSH Keys</a>
+<a class="page-next" href="Setup/fr0102_Simple-Node-Apps.md">Create a Simple NodeJS App - NEXT</a>

@@ -1,5 +1,5 @@
-<a class="page-back" href="/#/Setup/fr0302_Setup-Hardening-Ubuntu.md"  >BACK - Harden Ubuntu</a>
-<a class="page-next" href="/#/Setup/fr0304_Setup-App-Server-Ubuntu.md" >Install App Server - NEXT</a>
+<a class="page-back" href="Setup/fr0302_Setup-Hardening-Ubuntu.md"  >BACK - Harden Ubuntu</a>
+<a class="page-next" href="Setup/fr0304_Setup-App-Server-Ubuntu.md" >Install App Server - NEXT</a>
 
 ## Setup Instructions for the web server, NGINX, on Ubuntu
 
@@ -79,5 +79,5 @@ Use label: FormR-Installed-Web-Server
 ## [Install App Server](../Setup/fr0304_Setup-App-Server-Ubuntu.md)
 -->
 
-<a class="page-back" href="/#/Setup/fr0302_Setup-Hardening-Ubuntu.md"  >BACK - Harden Ubuntu</a>
-<a class="page-next" href="/#/Setup/fr0304_Setup-App-Server-Ubuntu.md" >Install App Server - NEXT</a>
+<a class="page-back" href="Setup/fr0302_Setup-Hardening-Ubuntu.md"  >BACK - Harden Ubuntu</a>
+<a class="page-next" href="Setup/fr0304_Setup-App-Server-Ubuntu.md" >Install App Server - NEXT</a>

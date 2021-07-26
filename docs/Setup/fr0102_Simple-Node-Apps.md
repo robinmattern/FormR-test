@@ -1,6 +1,6 @@
 
-<a class="page-back" href="/#/Setup/fr0101_Setup-Developer-Workstation.md">BACK - Setup Developer Workstation</a>
-<a class="page-next" href="/#/Setup/fr0103_Clone-FormR.md">Clone FormR - NEXT</a>
+<a class="page-back" href="Setup/fr0101_Setup-Developer-Workstation.md">BACK - Setup Developer Workstation</a>
+<a class="page-next" href="Setup/fr0103_Clone-FormR.md">Clone FormR - NEXT</a>
 
 ## Creating Node Applications on the MERN stack development workstation
 
@@ -278,5 +278,5 @@ node queryDB
 
 <h3> Congratulations! You have run Node applications that test your development environment.</h3>
 
-<a class="page-back" href="/#/Setup/fr0101_Setup-Developer-Workstation.md">BACK - Setup Developer Workstation</a>
-<a class="page-next" href="/#/Setup/fr0103_Clone-FormR.md">Clone FormR - NEXT</a>
+<a class="page-back" href="Setup/fr0101_Setup-Developer-Workstation.md">BACK - Setup Developer Workstation</a>
+<a class="page-next" href="Setup/fr0103_Clone-FormR.md">Clone FormR - NEXT</a>

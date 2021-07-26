@@ -1,6 +1,6 @@
 
-<a class="page-back" href="/#/Setup/fr0304_Setup-App-Server-Ubuntu.md ">BACK - Install App Server</a>
-<a class="page-next" href="/#/Setup/fr0306_Setup-Website-SSL-Ubuntu.md">Install Website SSL - NEXT</a>
+<a class="page-back" href="Setup/fr0304_Setup-App-Server-Ubuntu.md ">BACK - Install App Server</a>
+<a class="page-next" href="Setup/fr0306_Setup-Website-SSL-Ubuntu.md">Install Website SSL - NEXT</a>
 
 ## Setup Instructions for Data server using MySQL on a Vultr Ubuntu VM
 
@@ -124,5 +124,5 @@ mysql xxx.xxx.xxx.xxx:3306 JS> \quit
 ## [Create Website with SSL](../Setup/fr0306_Setup-Website-SSL-Ubuntu.md)
 -->
 
-<a class="page-back" href="/#/Setup/fr0304_Setup-App-Server-Ubuntu.md ">BACK - Install App Server</a>
-<a class="page-next" href="/#/Setup/fr0306_Setup-Website-SSL-Ubuntu.md">Install Website SSL - NEXT</a>
+<a class="page-back" href="Setup/fr0304_Setup-App-Server-Ubuntu.md ">BACK - Install App Server</a>
+<a class="page-next" href="Setup/fr0306_Setup-Website-SSL-Ubuntu.md">Install Website SSL - NEXT</a>

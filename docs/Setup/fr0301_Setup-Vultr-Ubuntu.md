@@ -1,5 +1,5 @@
-<a class="page-back" href="/#/Setup/fr0103_Clone-FormR.md">BACK - Clone FormR</a>
-<a class="page-next" href="/#/Setup/fr0302_Setup-Hardening-Ubuntu.md">Harden Ubuntu - NEXT</a>
+<a class="page-back" href="Setup/fr0103_Clone-FormR.md">BACK - Clone FormR</a>
+<a class="page-next" href="Setup/fr0302_Setup-Hardening-Ubuntu.md">Harden Ubuntu - NEXT</a>
 
 ## Instructions for creating an Ubuntu server on Vultr
 
@@ -73,8 +73,8 @@
 ### [NEXT - HardenUbuntu](/Setup/fr0302_Setup-Hardening-Ubuntu.md)
 -->
 
-<a class="page-back" href="/#/Setup/fr0103_Clone-FormR.md">BACK - Clone FormR</a>
-<a class="page-next" href="/#/Setup/fr0302_Setup-Hardening-Ubuntu.md">Harden Ubuntu - NEXT</a>
+<a class="page-back" href="Setup/fr0103_Clone-FormR.md">BACK - Clone FormR</a>
+<a class="page-next" href="Setup/fr0302_Setup-Hardening-Ubuntu.md">Harden Ubuntu - NEXT</a>
 
 <!--
 <div class="page-back">### [BACK - Clone FormR ](/Setup/fr0103_Clone-FormR.md)</div>
