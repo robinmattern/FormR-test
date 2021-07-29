@@ -1,12 +1,18 @@
+<!-- ------------------------------------------------------------------------- -->
 
+<div class="page-back disabled">
 
-<a class="page-back disabled">BACK</a>
-<a class="page-next" href="Setup/fr0101_Setup-Developer-Workstation.md">NEXT - Setup Developer Workspace</a>  
-<br>
+BACK
+</div><div class="page-next">
 
-## 4 Uses of SSH Keys   
+[Setup Developer Workspace - NEXT](/Setup/fr0101_Setup-Developer-Workstation.md)
+</div><div style="margin-top:35px">&nbsp;</div> 
 
-### 1. A Remote Linux Server  
+<!-- ------------------------------------------------------------------------- -->
+
+## Uses of SSH Keys
+
+### 1. A Remote Linux Server
 
 1. Make a Private and Public Key pair of files
 
@@ -291,7 +297,12 @@
        cd formr1
 
 
-<a class="page-back disabled">BACK</a>
-<a class="page-next" href="Setup/fr0101_Setup-Developer-Workstation.md">NEXT - Setup Developer Workspace</a>
+<div class="page-back disabled">
+
+[BACK]()
+</div><div class="page-next">
+
+[Setup Developer Workspace - NEXT](/Setup/fr0101_Setup-Developer-Workstation.md)
+</div>
 
 

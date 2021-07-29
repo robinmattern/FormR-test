@@ -1,16 +1,32 @@
 
-<a class="page-back" href="Setup/fr0102_Simple-Node-Apps.md">BACK - Simple Node Apps</a>
-<a class="page-next" href="Setup/fr0301_Setup-Vultr-Ubuntu.md">Setup Vultr Ubuntu - NEXT</a>  
-<br>
+<!-- ------------------------------------------------------------------------- -->
+
+<div class="page-back">
+
+[BACK - Simple Node Apps](/Setup/fr0102_Simple-Node-Apps.md)
+</div><div class="page-next">
+
+[Setup Vultr Ubuntu - NEXT](/Setup/fr0301_Setup-Vultr-Ubuntu.md)
+</div><div style="margin-top:35px">&nbsp;</div> 
+
+<!-- ------------------------------------------------------------------------- -->
 
 ## Clone FormR
 
-   To be done
+#### To be done   
+<sp></sp>
 
-   ### 1. Step 1 
-   ### 2. Step 2 
-   ### 2. Step 1 
+### 1. Step 1
+### 2. Step 2
+### 2. Step 1
 
-<a class="page-back" href="Setup/fr0102_Simple-Node-Apps.md">BACK - Simple Node Apps</a>
-<a class="page-next" href="Setup/fr0301_Setup-Vultr-Ubuntu.md">Setup Vultr Ubuntu - NEXT</a>
+<!-- ------------------------------------------------------------------------- -->
+
+<div class="page-back">
+
+[BACK - Simple Node Apps](/Setup/fr0102_Simple-Node-Apps.md)
+</div><div class="page-next">
+
+[Setup Vultr Ubuntu - NEXT](/Setup/fr0301_Setup-Vultr-Ubuntu.md)
+</div>
 

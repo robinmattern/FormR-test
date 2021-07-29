@@ -1,5 +1,14 @@
-<a class="page-back" href="Setup/fr0303_Setup-Web-Server-Ubuntu.md" >BACK - Install Web Server</a>
-<a class="page-next" href="Setup/fr0305_Setup-Data-Server-Ubuntu"   >Install Database Server - NEXT</a>
+<!-- ------------------------------------------------------------------------- -->
+
+<div class="page-back">
+
+[BACK - Install Web Server     ](/Setup/fr0303_Setup-Web-Server-Ubuntu.md)
+</div><div class="page-next">
+
+[Install Database Server - NEXT](/Setup/fr0305_Setup-Data-Server-Ubuntu.md)
+</div>
+
+<!-- ------------------------------------------------------------------------- -->
 
 ## Setup Instructions for application server, NodeJS, on Ubuntu
 
@@ -95,10 +104,15 @@ Use label: FormR-Installed-App-Server
 
 ![Take Snapshot](./images/fr0304-12_Ubuntu-take-snapshot.png "Take Snapshot")
 
-<!--
-### Next Step - Install Database Server: 
-## [Install Database Server](../Setup/fr0305_Setup-Data-Server-Ubuntu.md)
--->
+<!-- ------------------------------------------------------------------------- -->
 
-<a class="page-back" href="Setup/fr0303_Setup-Web-Server-Ubuntu.md" >BACK - Install Web Server</a>
-<a class="page-next" href="Setup/fr0305_Setup-Data-Server-Ubuntu"   >Install Database Server - NEXT</a>
+<div class="page-back">
+
+[BACK - Install Web Server     ](/Setup/fr0303_Setup-Web-Server-Ubuntu.md)
+</div><div class="page-next">
+
+[Install Database Server - NEXT](/Setup/fr0305_Setup-Data-Server-Ubuntu.md)
+</div>
+
+<!-- ------------------------------------------------------------------------- -->
+

@@ -237,15 +237,15 @@ h1, h2 {
     } */
 
 :root {
- 
+
  /* Add sidebar navigation bullets  EMOJIS*/
- /* ↳ # ∘ ∗ ∥ ∦ ∤ ∴ ∷ ≀ ∼ ⊙ ⊚ ⊣ ⊢ ⊦ ⊸ ⊳ ⊹ ⋈ ⋑ ⨀ ⨾ ⩉ ⩥ ⩵ ⩨ ⩩ ⫸ ⫴ ⫼ ⟐ ⟜ ⟟ ⧙ ⦚ ⦙ ⧁ … º ⤻ ⥅ ⪢ ⪡  ▸ ▹ ▷ ➝ ➞  ▶ ︎*/
- /* --sidebar-nav-link-before-content-l1: '📃'; */
- /* --sidebar-nav-link-before-content-l &:first-of-type: 📃; */
- /* --sidebar-nav-link-before-content-l2: '📄'; */
- /* --sidebar-nav-link-before-content-l2: '⦚'; */
- /*	--sidebar-nav-link-before-content-l2: '↳';  *//* .(10513.01.1 RAM Don't save in Textpad.  These charswill be lost) */
- 
+ /* ? # ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? … º ? ? ? ?  ? ? ? ? ?  ? ?*/
+ /* --sidebar-nav-link-before-content-l1: '??'; */
+ /* --sidebar-nav-link-before-content-l &:first-of-type: ??; */
+ /* --sidebar-nav-link-before-content-l2: '??'; */
+ /* --sidebar-nav-link-before-content-l2: '?'; */
+ /* --sidebar-nav-link-before-content-l2: '?';  *//* .(10513.01.1 RAM Don't save in Textpad.  These charswill be lost) */
+
  /* Nav Links - Pseudo Style */
     }
 
@@ -538,7 +538,7 @@ h6:before {
      margin             : 0px 0px 0px 10px;
      }
 
-.sidebar p { 
+.sidebar p {
      padding             : 0px 0px 0px 0px;
      }
 
@@ -574,21 +574,20 @@ hb { display:     block;
 
 sp {
     display:       block;
-    content:      "&nbsp;nnnnnnn";
-    font-size:     10px;
-    margin-bottom: 10px;
+    height:        10px;
+/*  border:        1px solid red; */
     }
 
-.page-back { 
-    float        : left; 
+.page-back {
+    float        : left;
     font-weight  : bold;
     color        : maroon;
     margin-top   : 15px;
     margin-bottom: 20px;
     }
 
-.page-next { 
-    float        : right; 
+.page-next {
+    float        : right;
     font-weight  : bold;
     color        : maroon;
     margin-top   : 15px;

@@ -1,13 +1,21 @@
+<!-- ------------------------------------------------------------------------- -->
 
-<a class="page-back" href="Setup/fr0050_Setup-SSH-Key-Files.md">BACK - Create SSH Keys</a>
-<a class="page-next" href="Setup/fr0102_Simple-Node-Apps.md">Create a Simple NodeJS App - NEXT</a>
+<div class="page-back">
+
+[BACK - Create SSH Keys](/Setup/fr0050_Setup-SSH-Key-Files.md)
+</div><div class="page-next">
+
+[Create a Simple NodeJS App - NEXT](/Setup/fr0102_Simple-Node-Apps.md)
+</div>
+
+<!-- ------------------------------------------------------------------------- -->
 
 ## Instructions for setting up a MERN stack development workstation
 
 #### Introduction
-The following steps create the development environment on your workstation for developing an MERN stack (MYSql, Express, React and Node) application. You will access a repository on github and modify it, run it and push changes back to github. We will be using an empty 'Windows Pro N' VM in these instructions. You should be able to use any workstation. Just follow the steps. 
+The following steps create the development environment on your workstation for developing an MERN stack (MYSql, Express, React and Node) application. You will access a repository on github and modify it, run it and push changes back to github. We will be using an empty 'Windows Pro N' VM in these instructions. You should be able to use any workstation. Just follow the steps.
 #### Steps to set up your development workstation
-<br> 
+<br>
 
 ### 1. Install any updates to your workstation.
 
@@ -38,7 +46,7 @@ The following steps create the development environment on your workstation for d
 Enable Extentions and Hidden Files
 ```
 
-![Change-View-Options](./images/fr0101-02_Change-View-Options.png "Change-View-Options") 
+![Change-View-Options](./images/fr0101-02_Change-View-Options.png "Change-View-Options")
 
 
 - Test if OpenSSH client is installed.
@@ -64,12 +72,12 @@ From DOS command prompt run ssh.
 ![OpenSSH-is-installed](./images/fr0101-02_OpenSSH-is-installed.png "OpenSSH-is-installed")
 
 
-- Create 3 ssh keys. These keys will be used for GitHub, your Cloud Provider and your Remote server. Run from 
+- Create 3 ssh keys. These keys will be used for GitHub, your Cloud Provider and your Remote server. Run from
 
 ```
 Format:
 
-ssh-keygen -t rsa -g -f 
+ssh-keygen -t rsa -g -f
 "<local user folder>/.ssh/
 <key owner name>@<host name>_<host user name>_v<date>_key"
 -C "<key owner name>@<host name>_<host user name>_v<date>"
@@ -125,7 +133,7 @@ https://chrome.google.com/webstore/category/extensions?hl=en-US
 
 ![Chrome-extensions1](./images/fr0101-03_Chrome-extensions1.png "Chrome-extensions1")
 
-- Allow access to file URLs 
+- Allow access to file URLs
 
 ```
 chrome://extensions/?id=febilkbfcbhebfnokafefeacimjdckgl
@@ -167,9 +175,9 @@ http://githib.com
 - Create a new repository: 'myProject'.
 
 ```
-https://github/new 
+https://github/new
 
-Select Private and check ReadMe file, then click Create Repository. 
+Select Private and check ReadMe file, then click Create Repository.
 ```
 
 ![GitHub-myProject](./images/fr0101-04_GitHub-myProject.png "GitHub-myProject")
@@ -202,7 +210,7 @@ go to the bottom of the edit page to the Commit Changes section.
 
 ###    5. Configure ssh Access to Github
 
-- Create Host for github connection in the .ssh/config file. 
+- Create Host for github connection in the .ssh/config file.
 
 ```
 Open or create .ssh/config file and add the following:
@@ -234,7 +242,7 @@ ssh github-btg
 
 - Allow changes
 
-![Git-for-Windows1](./images/fr0101-06_Git-for-Windows1.png "Git-for-Windows1") 
+![Git-for-Windows1](./images/fr0101-06_Git-for-Windows1.png "Git-for-Windows1")
 
 - Select all the default values and install
 
@@ -260,7 +268,7 @@ Accept all the defaults for installation
 
 ![VSCode](./images/fr0101-07_VSCode.png "VSCode")
 
-- Pin it to Task Bar 
+- Pin it to Task Bar
 
 ![VSCode2](./images/fr0101-07_VSCode2.png "VSCode2")
 
@@ -293,14 +301,14 @@ Accept all the defaults for installation
 
 ```
 Using Notepad, edit:
- 
- C:\Users\xxxxxxxxxx\AppData\Roaming\Code\User\settings.json 
- 
+
+ C:\Users\xxxxxxxxxx\AppData\Roaming\Code\User\settings.json
+
  and add this line at the bottom of the file:
 
-"terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",  
+"terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
 ```
-  
+
 ![VSCode11](./images/fr0101-07_VSCode11.png "VSCode11")
 
 ![VSCode11a](./images/fr0101-07_VSCode11a.png "VSCode11a")
@@ -347,7 +355,7 @@ code .
 
 - Close the VSCode Welcome window
 
-![Close-welcome](./images/fr0101-08_Close-welcome.png "Close-welcome") 
+![Close-welcome](./images/fr0101-08_Close-welcome.png "Close-welcome")
 
 
 - Click File.. Save Workspace as: myProject.code.workspace
@@ -362,7 +370,7 @@ code .
 - Open MyProject in VSCode and click on the ReadMe.md file and add these lines:
 ```
     1. My first update was changed locally.
-    
+
     2. I previewed it in VSCode and Chrome.
 ```
 
@@ -380,51 +388,51 @@ code .
 
 ![Markdown-Preview5](./images/fr0101-09_Markdown-Preview5.png "Markdown-Preview5")
 
-![Markdown-Preview6](./images/fr0101-09_Markdown-Preview6.png "Markdown-Preview6") 
+![Markdown-Preview6](./images/fr0101-09_Markdown-Preview6.png "Markdown-Preview6")
 
 
 ###    10. Push and Pull with GitHub
 
 - From VSCode.. Click the Control Source icon with the 2
 
-![Github-push](./images/fr0101-10_Github-push.png "Github-push") 
+![Github-push](./images/fr0101-10_Github-push.png "Github-push")
 
 - In the Message textbox, type: Updated Readme.md
 
-![Github-push](./images/fr0101-10_Github-push.png "Github-push") 
+![Github-push](./images/fr0101-10_Github-push.png "Github-push")
 
 - Click on the Commit checkmark above the Message textbox
 
-![Github-push](./images/fr0101-10_Github-push.png "Github-push") 
+![Github-push](./images/fr0101-10_Github-push.png "Github-push")
 
 -  From the Source Control menu, click the three dots (...) More menu, and click Push.
 
-![Github-push](./images/fr0101-10_Github-push.png "Github-push") 
+![Github-push](./images/fr0101-10_Github-push.png "Github-push")
 
 - Login to GitHub and select the myProject repository then click Readme.md, it should be updated.
 
 ![Github-push](./images/fr0101-10_Github-push.png "Github-push")
- 
+
 - Modify Readme.md in Github by adding these lines:
 ```
 3. I updated it in GitHub.
 
 4. I pulled it to my local repo using VScode
-``` 
+```
 
-![Github-push](./images/fr0101-10_Github-push.png "Github-push") 
+![Github-push](./images/fr0101-10_Github-push.png "Github-push")
 
 - Commit the change.
 
-![Github-push](./images/fr0101-10_Github-push.png "Github-push") 
+![Github-push](./images/fr0101-10_Github-push.png "Github-push")
 
-- In VSCode, From the Source Control menu, click the three dots (...) More menu, and click Pull. 
+- In VSCode, From the Source Control menu, click the three dots (...) More menu, and click Pull.
 
-![Github-push](./images/fr0101-10_Github-push.png "Github-push") 
+![Github-push](./images/fr0101-10_Github-push.png "Github-push")
 
 - The Github changes will now appear in the Readme.md file.
 
-![Github-push](./images/fr0101-10_Github-push.png "Github-push") 
+![Github-push](./images/fr0101-10_Github-push.png "Github-push")
 
 ###    11. Install Node for Windows
 1. Browse to: nodejs.org/en/downloads
@@ -436,11 +444,11 @@ code .
 ```
     node --version
     npm --version
-```    
+```
 ![Nodejs-install-check](./images/fr0101-11_Nodejs-install-check.png "Nodejs-install-check")
 
 
-###    12. Install MySql for windows 
+###    12. Install MySql for windows
 1. Follow the instructions at: https://dev.mysql.com/doc/mysql-windows-excerpt/5.7/en/windows-installation.html
 2. Choose the version: mysql-installer-community-8.0.23.0.msi
 
@@ -529,5 +537,14 @@ code .
 
  After all installations on a new Windows 10 machine, 27GB was used on Drive C:.
 
-<a class="page-back" href="Setup/fr0050_Setup-SSH-Key-Files.md">BACK - Create SSH Keys</a>
-<a class="page-next" href="Setup/fr0102_Simple-Node-Apps.md">Create a Simple NodeJS App - NEXT</a>
+<!-- ------------------------------------------------------------------------- -->
+
+<div class="page-back">
+
+[BACK - Create SSH Keys](/Setup/fr0050_Setup-SSH-Key-Files.md)
+</div><div class="page-next">
+
+[Create a Simple NodeJS App - NEXT](/Setup/fr0102_Simple-Node-Apps.md)
+</div>
+
+<!-- ------------------------------------------------------------------------- -->
